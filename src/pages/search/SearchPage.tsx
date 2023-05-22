@@ -8,7 +8,9 @@ export const SearchPage = () => {
       <div>
         <Navbar navItems={navItems} />
       </div>
-      <h1>Search Page</h1>
+      <div className="page-container">
+        <h1>Search Page</h1>
+      </div>
     </div>
   );
 };

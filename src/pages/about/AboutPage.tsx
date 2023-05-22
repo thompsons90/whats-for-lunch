@@ -8,7 +8,9 @@ export const AboutPage = () => {
       <div>
         <Navbar navItems={navItems} />
       </div>
-      <h1>About Page</h1>
+      <div className="page-container">
+        <h1>About Page</h1>
+      </div>
     </div>
   );
 };

@@ -8,7 +8,9 @@ export const ContactPage = () => {
       <div>
         <Navbar navItems={navItems} />
       </div>
-      <h1>Contact Page</h1>
+      <div className="page-container">
+        <h1>Contact Page</h1>
+      </div>
     </div>
   );
 };

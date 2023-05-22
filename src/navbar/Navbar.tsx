@@ -1,8 +1,5 @@
-import React, { useState } from "react";
-import logo from "../utils/images/whatsForLunchGreen.png";
-import hamburger from "../utils/images/hamburger.png";
-// import Menu from "./Menu";
-// import Burger from "./Burger";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 interface NavItem {
   title: string;
@@ -16,51 +13,34 @@ interface Props {
 }
 
 const Navbar: React.FC<Props> = ({ navItems }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
+  console.log(navItems);
+
   return (
-    <nav id="nav-menu">
-      <a href="/" className="logo-container"></a>
-      <div className="mobile-menu-container">
-        <ul className="mobile-menu">
-          {navItems.map((item, index) => (
-            <li key={index}>
-              <a href={item.path} className="links">
-                <div
-                  className={`icon-container ${
-                    item.mobile ? "icon-container-mobile" : ""
-                  }`}
-                  style={{
-                    backgroundImage: `url(${item.icon})`,
-                  }}
-                ></div>
-                {/* {item.title} */}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-      {/* //? ----- Desktop Section Navigation ----- */}
-      <button
-        className="hamburger-button"
-        onClick={() => setIsOpen(!isOpen)}
-      ></button>
-      <div className={`header desktop-menu-container ${isOpen ? "open" : ""}`}>
-        <button
-          className="close-button"
-          onClick={() => setIsOpen(!isOpen)}
-        ></button>
-        <ul className="container section section__height desktop-menu">
+    <div className="nav-wrapper">
+      <section className="top-nav">
+        <a href="/" className="logo-container"></a>
+        <input id="menu-toggle" type="checkbox" />
+        <label className="menu-button-container" htmlFor="menu-toggle">
+          <div className="menu-button"></div>
+        </label>
+        <ul className="menu">
           {navItems.map((item, index) => (
             <li key={index}>
               <a href={item.path} className="section__title desktop-links">
-                <h2>{item.title}</h2>
+                <h2>
+                  <img
+                    className="desktop-icons"
+                    src={item.icon}
+                    alt="menu icons"
+                  />{" "}
+                  {item.title}
+                </h2>
               </a>
             </li>
           ))}
         </ul>
-      </div>
-    </nav>
+      </section>
+    </div>
   );
 };
 

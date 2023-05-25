@@ -1,27 +1,35 @@
 /* ? ----- Desktop/Tablet Styles Section */
 
-.logo-container {
+.logo-container img {
   /* display: none; */
   @media screen and (min-width: 900px) {
     width: 70px;
     height: 70px;
-    background-image: url("../src/utils/images/whatsForLunchGreen.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    /* background-image: url("../src/utils/images/whatsForLunchGreen.png"); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    object-fit: contain;
+    overflow: hidden;
   }
+}
+.logo-container {
+  /* border: 2px solid blue; */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  transition-duration: 0.5s;
+  color: #3f3d56;
+}
+
+.logo-container a:visited {
+  color: red;
 }
 
 .logo-container:hover {
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-}
-
-.logo-container:active {
-  width: 70px;
-  height: 80px;
-  filter: invert(50%);
+  font-size: 3rem;
+  color: #2a9d8f;
 }
 
 .desktop-menu-container {
@@ -30,7 +38,7 @@
   right: -100%;
   width: 400px;
   height: 100vh;
-  background-color: #454343;
+  background-color: #3f3d56;
   transition: all 0.5s ease-in-out;
   z-index: 100;
 }
@@ -58,7 +66,9 @@
 }
 
 /*todo ----- NAVBAR STYLES SECTION -----  */
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+/* @import url(https://fonts.googleapis.com/css?family=Raleway); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
 h2 {
   vertical-align: center;
   text-align: center;
@@ -71,8 +81,11 @@ body {
 } */
 
 * {
-  font-family: "Raleway";
+  font-family: "Poppins";
   box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .top-nav {
@@ -86,14 +99,18 @@ body {
   color: #fff;
   height: 60px;
   padding: 1em;
+  position: fixed;
+  width: 100vw;
 }
 
 .menu {
   display: flex;
   flex-direction: row;
+  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  z-index: 105;
 }
 
 .menu > li {
@@ -106,6 +123,7 @@ body {
   height: 30px;
   border: none;
   filter: invert(100%);
+  transition-duration: 0.5s;
 
   @media screen and (max-width: 500px) {
     display: none;
@@ -205,7 +223,7 @@ body {
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
-    color: white;
+    color: #fff;
     background-color: #222;
   }
   .menu > li:not(:last-child) {
@@ -213,200 +231,121 @@ body {
   }
 }
 
-/*todo ----- MODAL RECIPE STYLES SECTION -----  */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Gray overlay color */
+.search-bar,
+.action-bar,
+.search-button {
+  color: #fff;
+  background-color: #3f3d56;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  box-shadow: 1px 1px 2px #333;
+  transition: 0.5s;
+}
+
+.action-bar {
+  width: 300px;
+}
+
+.search-bar {
+  width: 300px;
+  color: #3f3d56;
+  border: 2px solid #3f3d56;
+  background-color: #fff;
+}
+
+.action-bar {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.modal-content {
-  position: fixed;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.action-bar:hover,
+.search-button:hover {
+  font-size: 1.7rem;
+  box-shadow: 2px 2px 3px #333;
+  cursor: pointer;
 }
 
-/*? ----- Modal Button Styles Section -----  */
-.form-buttons {
+#search {
+  text-decoration: none;
   display: flex;
-  justify-content: space-around;
-}
-
-.btn-primary,
-.btn-secondary {
-  padding: 5px;
-  border: none;
-  border-radius: 5px;
-  font-size: large;
+  gap: 10px;
   color: #fff;
 }
 
-.btn-primary {
-  background-color: #2a9d8f;
+.search-bar-icon {
+  background-image: url("../../public/images/search.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: invert(100%);
+  width: 20px;
+  height: 20px;
 }
 
-.btn-secondary {
-  background-color: #636363;
-}
-
-/*? ----- Tabs Styles Section ----- */
-.container {
-  width: 325px;
-}
-
-.tab-list {
-  height: 30px;
+/*todo: ----- RECIPE CARD STYLES SECTION -----  */
+.recipe-card-container {
   display: flex;
-  list-style: none;
-  font-size: 18px;
-  padding: 0;
-  margin: 0;
-  background-color: #fff;
-  border-radius: 5px;
+  flex-wrap: wrap;
 }
 
-.tabs {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background: #80808013; */
-  position: relative;
+.recipe-card {
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  margin: 10px;
   cursor: pointer;
-  border-radius: 5px;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 }
 
-.active-tabs {
-  /* background: #2a9d8f; */
-  background: transparent;
-  border-radius: 5px;
+.recipe-card.flipped {
+  transform: rotateY(180deg);
 }
 
-.active-tabs::before {
-  content: "";
-  display: block;
+.recipe-card-front,
+.recipe-card-back {
   position: absolute;
-  bottom: -4px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% + 2px);
-  height: 4px;
-  background: #2a9d8f;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 2px solid #3f3d56;
+  box-shadow: 1px 1px 2px #3f3d56;
+  border-radius: 10px;
 }
 
-.content {
-  display: none;
-  padding: 10px;
-}
-
-.active-content {
+.recipe-card-front {
+  background-color: #f7f7f7;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
-.rating-input {
-  -webkit-appearance: none;
-  appearance: none;
-  overflow: hidden;
-  width: 80px;
-}
-.rating-input:hover {
-  cursor: pointer;
-}
-
-.rating-input::-webkit-slider-runnable-track {
-  height: 10px;
-  /* -webkit-appearance: none; */
-  background-color: #ccc;
-  margin-top: -1px;
-  border-radius: 5px;
-}
-
-.rating-input::-webkit-slider-thumb {
-  width: 10px;
-  /* -webkit-appearance: none; */
-  height: 10px;
-  cursor: ew-resize;
-  background: transparent;
-  background-color: #2a9d8f;
-  box-shadow: -80px 0 0 80px #2a9d8f;
-}
-
-.rating-input::-webkit-slider-thumb {
-  appearance: none;
-  width: 16px;
-  height: 16px;
-  background-color: #2a9d8f;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.rating-input::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 8px;
-  /* background-color: #2a9d8f; Change the background color for the track */
-  border-radius: 5px;
-}
-
-/* //? ----- MODAL PLAN MEAL STYLE SECTION ----- */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Dark background color with transparency */
+.recipe-card-back {
+  background-color: #fff;
+  transform: rotateY(180deg);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
+  align-items: flex-start;
+  padding: 10px;
+  overflow-y: auto;
 }
 
-.modal-content {
-  background-color: #fff; /* Background color of the modal */
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.modal-content h2 {
-  margin-top: 0;
-}
-
-.container {
+.recipe-card h2 {
   margin-bottom: 10px;
 }
 
-label {
-  display: block;
+.recipe-card ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.recipe-card li {
   margin-bottom: 5px;
 }
 
-input {
-  width: 100%;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-.form-buttons {
-  margin-top: 10px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.form-buttons button {
-  margin-left: 5px;
+.recipe-card li:last-child {
+  margin-bottom: 0;
 }

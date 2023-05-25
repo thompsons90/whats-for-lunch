@@ -1,0 +1,215 @@
+/*todo ----- MODAL RECIPE STYLES SECTION -----  */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Gray overlay color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  position: fixed;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.open-modal-button {
+  font-size: 1rem;
+  background-color: #2a9d8f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transform: translateY(25px);
+}
+
+.open-modal-button:hover {
+  font-size: 1.25rem;
+  padding: 7.5px;
+  box-shadow: 1px 1px 2px #636363;
+}
+
+/*? ----- Modal Button Styles Section -----  */
+.form-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: large;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #2a9d8f;
+}
+
+.btn-secondary {
+  background-color: #636363;
+}
+
+/*? ----- Tabs Styles Section ----- */
+.container {
+  width: 325px;
+}
+
+.tab-list {
+  height: 30px;
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.tabs {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #80808013; */
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.active-tabs {
+  /* background: #2a9d8f; */
+  background: transparent;
+  border-radius: 5px;
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 4px;
+  background: #2a9d8f;
+}
+
+.content {
+  display: none;
+  padding: 10px;
+}
+
+.active-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-input {
+  -webkit-appearance: none;
+  appearance: none;
+  overflow: hidden;
+  width: 80px;
+}
+.rating-input:hover {
+  cursor: pointer;
+}
+
+.rating-input::-webkit-slider-runnable-track {
+  height: 10px;
+  /* -webkit-appearance: none; */
+  background-color: #ccc;
+  margin-top: -1px;
+  border-radius: 5px;
+}
+
+.rating-input::-webkit-slider-thumb {
+  width: 10px;
+  /* -webkit-appearance: none; */
+  height: 10px;
+  cursor: ew-resize;
+  background: transparent;
+  background-color: #2a9d8f;
+  box-shadow: -80px 0 0 80px #2a9d8f;
+}
+
+.rating-input::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #2a9d8f;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.rating-input::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  /* background-color: #2a9d8f; Change the background color for the track */
+  border-radius: 5px;
+}
+
+/* //? ----- MODAL PLAN MEAL STYLE SECTION ----- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Dark background color with transparency */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background-color: #fff; /* Background color of the modal */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.container {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-buttons button {
+  margin-left: 5px;
+}

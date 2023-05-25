@@ -11,6 +11,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import Navbar from "../../navbar/Navbar";
 import { navItems } from "../../App";
 import ModalPlanMeal from "../../modals/planMeal/ModalPlanMeal";
+import MasterPage from "../MasterPage";
 
 const localizer = dateFnsLocalizer({
   format,
@@ -75,6 +76,7 @@ const CalendarPage: FC = () => {
   const handleDateSelect = (date: Date) => {
     setSelectedDate(date);
     setIsOpen(true);
+    console.log("clicked calendar");
   };
 
   const handleAddEvent = () => {
@@ -90,30 +92,39 @@ const CalendarPage: FC = () => {
   };
 
   return (
-    <>
-      <div>
-        <Navbar navItems={navItems} />
-      </div>
+    <div className="page-wrapper">
+      <MasterPage
+        pageContent={
+          <div className="page-content-container">
+            <div className="modal-button-container">
+              <button className="open-modal-button" onClick={handleButtonClick}>
+                Add Meal
+              </button>
+            </div>
+            <ModalPlanMeal
+              isOpen={isOpen}
+              setIsOpen={setIsOpen}
+              selectedDate={selectedDate}
+            />
 
-      <button className="open-modal-button" onClick={handleButtonClick}>
-        Open Modal
-      </button>
-      <ModalPlanMeal
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-        selectedDate={selectedDate}
+            <Calendar
+              localizer={localizer}
+              events={allEvents}
+              startAccessor={(event) => event.start || new Date()}
+              endAccessor={(event) => event.end || new Date()}
+              style={{ height: 500, margin: "50px" }}
+              className="calendar-component"
+              selectable
+              onSelectSlot={(slotInfo) => {
+                setSelectedDate(slotInfo.start);
+                setIsOpen(true);
+                console.log("clicked calendar");
+              }}
+            />
+          </div>
+        }
       />
-
-      <Calendar
-        localizer={localizer}
-        events={allEvents}
-        startAccessor={(event) => event.start || new Date()}
-        endAccessor={(event) => event.end || new Date()}
-        style={{ height: 500, margin: "50px" }}
-        selectable
-        onSelectSlot={(slotInfo) => handleDateSelect(slotInfo.start)}
-      />
-    </>
+    </div>
   );
 };
 

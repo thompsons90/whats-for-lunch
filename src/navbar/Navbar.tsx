@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import logo from "../../public/images/whatsForLunchGreen.png";
 
 interface NavItem {
   title: string;
@@ -13,12 +13,13 @@ interface Props {
 }
 
 const Navbar: React.FC<Props> = ({ navItems }) => {
-  console.log(navItems);
-
   return (
     <div className="nav-wrapper">
       <section className="top-nav">
-        <a href="/" className="logo-container"></a>
+        <a href="/" className="logo-container">
+          <img src={logo} />
+          What's for Lunch?
+        </a>
         <input id="menu-toggle" type="checkbox" />
         <label className="menu-button-container" htmlFor="menu-toggle">
           <div className="menu-button"></div>
@@ -38,6 +39,14 @@ const Navbar: React.FC<Props> = ({ navItems }) => {
               </a>
             </li>
           ))}
+          {/*//! ----- Update this section to be an input app wide search bar -----   */}
+          {/*
+          <li className="search-bar">
+             <a href="/search" id="search">
+              <div className="search-bar-icon" /> Search Website?
+            </a> 
+          </li>
+            */}
         </ul>
       </section>
     </div>

@@ -92,7 +92,7 @@ const CalendarPage: FC = () => {
   };
 
   return (
-    <div className="page-wrapper">
+    <div>
       <MasterPage
         pageContent={
           <div className="page-content-container">

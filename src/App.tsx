@@ -22,6 +22,7 @@ import cookbookIcon from "../public/images/book-alt.png";
 // import searchIcon from "../public/images/search.png";
 import aboutIcon from "../public/images/comment-info.png";
 import contactIcon from "../public/images/user.png";
+import { NavItem } from "./utils/constants";
 
 export const navItems: NavItem[] = [
   // { title: "Home", path: "/", icon: homeIcon, mobile: true },
@@ -31,17 +32,6 @@ export const navItems: NavItem[] = [
   { title: "About", path: "/about", icon: aboutIcon, mobile: false },
   // { title: "Contact", path: "/contact", icon: contactIcon, mobile: false },
 ];
-
-interface NavItem {
-  title: string;
-  path: string;
-  icon: string;
-  mobile: boolean;
-}
-
-// interface Props {
-//   navItems: NavItem[];
-// }
 
 const App = () => {
   // const [navigateToCalendar, setNavigateToCalendar] = useState(false);

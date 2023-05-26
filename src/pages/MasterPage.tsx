@@ -3,10 +3,7 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import "react-datepicker/dist/react-datepicker.css";
 import Navbar from "../navbar/Navbar";
 import { navItems } from "../App";
-
-interface MasterPageProps {
-  pageContent: ReactNode;
-}
+import { MasterPageProps } from "../utils/constants";
 
 const MasterPage: FC<MasterPageProps> = ({ pageContent }) => {
   return (

@@ -1,31 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { navItems } from "../../App";
-import ModalRecipe from "../../modals/recipe/ModalRecipe";
+// import ModalRecipe from "../../modals/recipe/ModalRecipe";
 // import Navbar from "../../navbar/Navbar";
 import Navbar from "../../navbar/Navbar";
 import MasterPage from "../MasterPage";
+import { NavProps } from "../../utils/constants";
 // import Navbar2 from "../../navbar/Navbar2";
 
-interface NavItem {
-  title: string;
-  path: string;
-}
-
-interface NavItem {
-  title: string;
-  path: string;
-  icon: string;
-  mobile: boolean;
-}
-
-interface Props {
-  navItems: NavItem[];
-  // navigateToCalendar: boolean;
-  // setNavigateToCalendar: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-export const LandingPage: React.FC<Props> = (
+export const LandingPage: React.FC<NavProps> = (
   {
     // navigateToCalendar,
     // setNavigateToCalendar,

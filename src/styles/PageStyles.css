@@ -10,8 +10,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .page-content-container {
@@ -181,11 +181,63 @@
 }
 
 /*? ----- Cookbook Page Styles ----- */
+.pageContainer {
+  overflow: hidden;
+}
+
 .cookbook-page-container {
   display: flex;
   justify-content: center;
   background-color: #d5d5d5;
   width: 85%;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cookbook-page-search-text {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+.cookbook-page-search-text p {
+  font-size: 1.5rem;
+}
+
+.cookbook-page-search-container {
+  position: sticky;
+  top: 0;
+  /* background-color: white; */
+  z-index: 999;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cookbook-page-recipe-container {
+  overflow-y: auto;
+  max-height: calc(100vh - 250px);
+}
+
+.cookbook-page-recipe-container::-webkit-scrollbar {
+  width: 0.8em; /* Adjust the width as needed */
+}
+
+.cookbook-page-recipe-container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.cookbook-page-recipe-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 0.4em;
+}
+
+.cookbook-page-recipe-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
 
 /*? ----- About Page Styles -----  */

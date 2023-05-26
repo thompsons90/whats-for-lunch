@@ -1,24 +1,17 @@
-import React, { useState, ChangeEvent, FormEvent } from "react";
-// import "./SearchBar.css";
-
-interface SearchBarProps {
-  onSearch: (searchTerm: string) => void;
-}
+import React, { useState, ChangeEvent } from "react";
+import { SearchBarProps } from "../../utils/constants";
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(event.target.value);
-  };
-
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    onSearch(searchTerm);
+    const { value } = event.target;
+    setSearchTerm(value);
+    onSearch(value); // Call the onSearch function with the updated value
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div>
       <input
         className="search-bar"
         type="text"
@@ -26,10 +19,10 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
         value={searchTerm}
         onChange={handleInputChange}
       />
-      <button type="submit" className="search-button">
+      <button className="search-button" onClick={() => onSearch(searchTerm)}>
         Search
       </button>
-    </form>
+    </div>
   );
 };
 

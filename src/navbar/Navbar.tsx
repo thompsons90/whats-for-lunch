@@ -1,18 +1,8 @@
 import React from "react";
 import logo from "../../public/images/whatsForLunchGreen.png";
+import { NavProps } from "../utils/constants";
 
-interface NavItem {
-  title: string;
-  path: string;
-  icon: string;
-  mobile: boolean;
-}
-
-interface Props {
-  navItems: NavItem[];
-}
-
-const Navbar: React.FC<Props> = ({ navItems }) => {
+const Navbar: React.FC<NavProps> = ({ navItems }) => {
   return (
     <div className="nav-wrapper">
       <section className="top-nav">

@@ -1,21 +1,7 @@
 import React, { useState } from "react";
 import { recipeData } from "../utils/data";
+import { Recipe, RecipeCardsProps } from "../utils/constants";
 
-interface Recipe {
-  id: number;
-  mainRecipeName: string;
-  recipeTypeSelectedValue: string[];
-  totalTimeMinutes: number;
-  prerequisiteMeal?: string;
-  ingredientsArray: string[];
-  recipeStatus: string;
-  recipeRating: number;
-  recipeDirections: string;
-}
-
-interface RecipeCardsProps {
-  recipes: Recipe[];
-}
 const RecipeCards = ({ recipes }: RecipeCardsProps) => {
   const [flippedRecipeId, setFlippedRecipeId] = useState<number | null>(null);
 

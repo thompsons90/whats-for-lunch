@@ -302,7 +302,7 @@ export const recipeData = [
     recipeDirections: "Follow bag instructions. Serve!",
   },
   {
-    id: 16,
+    id: 17,
     mainRecipeName: "Chicken Fried Steak",
     recipeTypeSelectedValue: ["Beef"],
     totalTimeMinutes: 0,
@@ -313,7 +313,7 @@ export const recipeData = [
     recipeDirections: "Follow bag instructions. Serve!",
   },
   {
-    id: 17,
+    id: 18,
     mainRecipeName: "Chicken Fried Chicken",
     recipeTypeSelectedValue: ["Chicken"],
     totalTimeMinutes: 0,
@@ -324,7 +324,7 @@ export const recipeData = [
     recipeDirections: "Follow bag instructions. Serve!",
   },
   {
-    id: 18,
+    id: 19,
     mainRecipeName: "Red Beans & Rice",
     recipeTypeSelectedValue: ["Soup"],
     totalTimeMinutes: 480,
@@ -341,7 +341,7 @@ export const recipeData = [
       "Sort & wash beans, put in crockpot with crockpot filled about 1/2 with water. Add 14 bouillion cubes if cooking whole package of beans. Cook on high all day. About an hour before serving, cut sausage into 4ths & brown in skillet, add to beans. Serve over rice!",
   },
   {
-    id: 19,
+    id: 20,
     mainRecipeName: "Oven Fried Chicken Drumsticks",
     recipeTypeSelectedValue: ["Chicken"],
     totalTimeMinutes: 90,
@@ -360,7 +360,7 @@ export const recipeData = [
       "Preheat oven to 425°, melt butter in a 9x13 baking dish in oven. While butter is melting, stir together bisquick, paprika, salt, & pepper in a bowl. Coat each drumstick & place in baking dish with melted butter. Spray with butter before putting in oven & once during baking. Bake for 30 mins, flip and back additional 15 - 25 mins. Serve!",
   },
   {
-    id: 20,
+    id: 21,
     mainRecipeName: "Pork Chops",
     recipeTypeSelectedValue: ["Pork"],
     totalTimeMinutes: 0,
@@ -371,7 +371,7 @@ export const recipeData = [
     recipeDirections: "Oven or skillet to cook pork chops. Serve!",
   },
   {
-    id: 21,
+    id: 22,
     mainRecipeName: "Pork Roast",
     recipeTypeSelectedValue: ["Pork"],
     totalTimeMinutes: 0,
@@ -382,7 +382,7 @@ export const recipeData = [
     recipeDirections: "Follow instructions. Serve!",
   },
   {
-    id: 22,
+    id: 23,
     mainRecipeName: "Pulled Pork Sandwich",
     recipeTypeSelectedValue: ["Pork", "Hamburger/Sandwich"],
     totalTimeMinutes: 0,
@@ -393,7 +393,7 @@ export const recipeData = [
     recipeDirections: "Heat pulled pork, put on buns. Serve!",
   },
   {
-    id: 23,
+    id: 24,
     mainRecipeName: "Corndogs",
     recipeTypeSelectedValue: ["Hotdog"],
     totalTimeMinutes: 20,
@@ -404,7 +404,7 @@ export const recipeData = [
     recipeDirections: "Heat corndogs. Serve!",
   },
   {
-    id: 24,
+    id: 25,
     mainRecipeName: "Chili Frito Pie",
     recipeTypeSelectedValue: ["Soup"],
     totalTimeMinutes: 10,
@@ -415,7 +415,7 @@ export const recipeData = [
     recipeDirections: "Heat chili & combine. Serve!",
   },
   {
-    id: 25,
+    id: 26,
     mainRecipeName: "Pizza",
     recipeTypeSelectedValue: ["Italian"],
     totalTimeMinutes: 20,
@@ -426,7 +426,7 @@ export const recipeData = [
     recipeDirections: "Order pizza. Serve!",
   },
   {
-    id: 26,
+    id: 27,
     mainRecipeName: "Fish Sticks",
     recipeTypeSelectedValue: ["Seafood"],
     totalTimeMinutes: 20,
@@ -437,7 +437,7 @@ export const recipeData = [
     recipeDirections: "Heat. Serve!",
   },
   {
-    id: 27,
+    id: 28,
     mainRecipeName: "Popcorn Shrimp",
     recipeTypeSelectedValue: ["Seafood"],
     totalTimeMinutes: 20,
@@ -448,7 +448,7 @@ export const recipeData = [
     recipeDirections: "Heat. Serve!",
   },
   {
-    id: 28,
+    id: 29,
     mainRecipeName: "Toquitos",
     recipeTypeSelectedValue: ["Mexican"],
     totalTimeMinutes: 20,
@@ -459,7 +459,7 @@ export const recipeData = [
     recipeDirections: "Heat. Serve!",
   },
   {
-    id: 29,
+    id: 30,
     mainRecipeName: "Steak",
     recipeTypeSelectedValue: ["Beef"],
     totalTimeMinutes: 20,
@@ -471,7 +471,7 @@ export const recipeData = [
       "Marinade in steak overnight or several hours. Take out of fridge ~30 mins before heating, tenderize. Heat grill/frying pan w/oil in order to sear each side. Season steak & cook. Serve!",
   },
   {
-    id: 31,
+    id: 32,
     mainRecipeName: "Jambalaya",
     recipeTypeSelectedValue: ["Soup"],
     totalTimeMinutes: 20,
@@ -482,7 +482,7 @@ export const recipeData = [
     recipeDirections: "Instructions on box. Serve!",
   },
   {
-    id: 32,
+    id: 33,
     mainRecipeName: "Pigs in a Blanket",
     recipeTypeSelectedValue: ["Hotdog"],
     totalTimeMinutes: 20,
@@ -498,7 +498,7 @@ export const recipeData = [
       "Cut crescent rolls & hotdogs. Preheat oven to 350°. Roll hotdogs & cheese in crescent rolls. Heat 10+ mins until rolls are right consistency. Serve!",
   },
   {
-    id: 33,
+    id: 34,
     mainRecipeName: "Soup & Grilled Cheese",
     recipeTypeSelectedValue: ["Soup", "Hamburger/Sandwich"],
     totalTimeMinutes: 20,
@@ -510,7 +510,7 @@ export const recipeData = [
       "Put soup(s) on low heat on stove top. Butter a slice of bread and low heat in frying pan. Layer cheese and buttered slice of bread on top. Flip and make sure both sides are golden brown. Serve!",
   },
   {
-    id: 34,
+    id: 35,
     mainRecipeName: "Cheese Burger Sliders",
     recipeTypeSelectedValue: ["Hamburger/Sandwich"],
     totalTimeMinutes: 30,
@@ -532,7 +532,7 @@ export const recipeData = [
       "Preheat oven to 350°. In a large bowl mix beef, Worcestershire sauce, onion soup mix, & eggs thoroughly. Place meat mix on a large parchment-lined baking sheet; shape into two 6x8-in rectangles, each about 1/2-in thick. Bake until 160° internal temp, 15-20 mins. Meanwhile, without separating rolls, cut bread in half horizontally. Optional: Spread 1/4 cup dressing over bottom half. Blot meat w/paper towel to remove excess fat; top meat w/cheese & return to oven. Bake 2-3 mins for cheese to melt. Place meat on bottom halves of rolls; spread remaining 1/4 cup dressing. Layer w/desired condiments. Replace top halves of rolls, butter the tops, & sprinkle sesame seeds. Cut into sandwiches. Serve!",
   },
   {
-    id: 35,
+    id: 36,
     mainRecipeName: "Beef Quesadillas",
     recipeTypeSelectedValue: ["Mexican"],
     totalTimeMinutes: 30,
@@ -553,7 +553,7 @@ export const recipeData = [
       "Preheat oven to 475°. Brown beef, drain. Stir in chiles, oregano, cumin, & salt. Cook over medium-low heat until heated through 3 - 4 mins. Brush one side of each tortilla w/butter. Spoon 1/2 cup meat mix over half of unbuttered side, sprinkle w/cheese, fold in half. Place on lightly greased baking sheet, optional: sprinkle paprika. Bake until crisp 8 - 10 mins. Cut & serve!",
   },
   {
-    id: 36,
+    id: 37,
     mainRecipeName: "Beef Chimichanga",
     recipeTypeSelectedValue: ["Mexican"],
     totalTimeMinutes: 30,
@@ -573,7 +573,7 @@ export const recipeData = [
       "Brown beef w/taco seasoning. Drain & wipe skillet clean. Top tortilla w/beef & cheese, roll. In same skillet over medium-high heat, brown chimichanga in oil on all sides. Serve!",
   },
   {
-    id: 37,
+    id: 38,
     mainRecipeName: "Mini Meatloaves",
     recipeTypeSelectedValue: ["Beef"],
     totalTimeMinutes: 40,
@@ -595,7 +595,7 @@ export const recipeData = [
       "Preheat oven to 350°. In large bowl, whisk eggs & milk. Stir in cheese, oats, onion, carrot, & salt. Crumble beef into mixture & mix. Shape into 8 loaves; place in lightly sprayed 13x9 baking dish. In small bowl, combine ketchup & brown sugar, spoon over loaves. Bake uncovered 25 - 30 mins. Serve!",
   },
   {
-    id: 38,
+    id: 39,
     mainRecipeName: "Chicken Bacon Ranch",
     recipeTypeSelectedValue: ["Chicken"],
     totalTimeMinutes: 0,
@@ -610,7 +610,7 @@ export const recipeData = [
     recipeDirections: "Bake the chicken, fry the bacon, add with ranch. Enjoy!",
   },
   {
-    id: 39,
+    id: 40,
     mainRecipeName: "Smothered & Stuffed Meatloaves",
     recipeTypeSelectedValue: ["Beef"],
     totalTimeMinutes: 40,
@@ -630,7 +630,7 @@ export const recipeData = [
       "Combine beef, breadcrumbs, seasoning, & salt, mix. Flatten into two 1/2-inch thick rounds. Put cheese in rounds and fold edges over (stuff it). Bake at 425° F for 20 mins. While meatloaves bake, heat a drizzle of oil in a large pan over medium-high heat. Add bell pepper and onion; cook, stirring occasionally until browned & tender (7 - 8 mins). Add 2 Tbsp water; cook, stirring until water has evaporated & veggies are tender. Season w/salt & stir in 1 Tbsp butter until melted. Turn off heat; cover to keep warm. While veggies cook, in a small bowl, combine 3 Tbsp ketchup & 2 Tsp brown sugar. Remove meatloaves after 20 mins, brush glaze over them and sprinkle with cheese. Return meatloaves to oven 3 - 5 mins to melt cheese, top w/veggies. Serve!",
   },
   {
-    id: 40,
+    id: 41,
     mainRecipeName: "Gravy Lover's Meatballs",
     recipeTypeSelectedValue: ["Beef"],
     totalTimeMinutes: 40,
@@ -646,7 +646,7 @@ export const recipeData = [
       "Preheat oven 450° F, peel garlic, finely chop 1 clove. Halve, peel, & finely chop onion. In a medium bowl, soak slice of bread w/3 Tbsp water; break up w/hands until pasty. Stir in beef, chopped garlic, 2 Tbsp onion, salt, & pepper; form into 1-inch balls. Cook 10 - 12 mins. Meanwhile, melt 1 Tbsp butter in large pan over medium heat. Add onion, pinch of salt & pepper. Cook, stirring until lightly browned, 8 - 10 mins. Add 1 Tbsp flour; stir until lightly browned, 1 minute.  Slowly stir in 3/4 Cup water & beef stock concentrate. Simmer 2 - 4 mins, reduce to low heat. Add meatballs to pan w/gravy & stir to coat. Serve over mashed potatoes!",
   },
   {
-    id: 41,
+    id: 42,
     mainRecipeName: "Chicken Bacon Ranch Sandwich",
     recipeTypeSelectedValue: ["Chicken"],
     totalTimeMinutes: 0,

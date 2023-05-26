@@ -267,6 +267,11 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
+.search-button:active {
+  background-color: #2a9d8f;
+  transition: 0.3s;
+}
+
 #search {
   text-decoration: none;
   display: flex;
@@ -287,6 +292,7 @@ body::-webkit-scrollbar {
 .recipe-card-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .recipe-card {
@@ -313,23 +319,40 @@ body::-webkit-scrollbar {
   border: 2px solid #3f3d56;
   box-shadow: 1px 1px 2px #3f3d56;
   border-radius: 10px;
+  border-color: #fff;
+  border-width: 10px;
+  color: #fff;
+  text-shadow: 1px 1px 2px #333;
+  background: linear-gradient(to left, #3f3d56, #5e5b85);
 }
 
 .recipe-card-front {
-  background-color: #f7f7f7;
+  /* background-color: #6f6c94; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .recipe-card-back {
-  background-color: #fff;
+  /* background-color: #6f6c94; */
   transform: rotateY(180deg);
   display: flex;
   align-items: flex-start;
   padding: 10px;
-  overflow-y: auto;
+  overflow-y: scroll; /* Enable scrolling */
+  scrollbar-width: thin; /* Hide the scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide the scrollbar for IE and Edge */
+  scrollbar-color: transparent transparent; /* Hide the scrollbar for Chrome and Safari */
+}
+
+.recipe-card-back::-webkit-scrollbar {
+  width: 0.5em; /* Set the width of the scrollbar for Chrome and Safari */
+}
+
+.recipe-card-back::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Hide the scrollbar thumb for Chrome and Safari */
 }
 
 .recipe-card h2 {
@@ -348,4 +371,43 @@ body::-webkit-scrollbar {
 
 .recipe-card li:last-child {
   margin-bottom: 0;
+}
+
+/*todo: ----- Enum Button on Cookbook Page -----  */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button-section {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+  background-color: #f2f2f2;
+  border: 2px solid #3f3d56;
+  border-radius: 15px;
+  box-shadow: 1px 1px 2px #333;
+  margin-right: 10px;
+}
+
+.button-section:last-child {
+  margin-right: 0;
+}
+
+.button-section.active {
+  background-color: #2a9d8f;
+  color: #fff;
 }

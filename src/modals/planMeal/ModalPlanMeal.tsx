@@ -1,25 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-
-type FormValues = {
-  id: number;
-  mainRecipeName: string;
-  recipeTypeSelectedValue: string[];
-  totalTimeMinutes: number;
-  prerequisiteMeal: string;
-  ingredientsArray: string[];
-  recipeStatus: string;
-  recipeRatingValue: number;
-  recipeDirections: string;
-};
-
 import { Dispatch, SetStateAction } from "react";
-
-interface ModalProps {
-  isOpen: boolean;
-  setIsOpen: Dispatch<SetStateAction<boolean>>;
-  selectedDate: Date | null;
-}
+import { FormValues, ModalProps } from "../../utils/constants";
 
 const ModalPlanMeal = ({ isOpen, setIsOpen, selectedDate }: ModalProps) => {
   const [modalPlanMeal, setModalPlanMeal] = useState({

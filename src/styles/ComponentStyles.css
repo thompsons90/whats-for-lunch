@@ -1,16 +1,13 @@
 /* ? ----- Desktop/Tablet Styles Section */
 
 .logo-container img {
-  /* display: none; */
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  overflow: hidden;
   @media screen and (min-width: 900px) {
-    width: 70px;
-    height: 70px;
-    /* background-image: url("../src/utils/images/whatsForLunchGreen.png"); */
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
-    object-fit: contain;
-    overflow: hidden;
+    /* width: 70px;
+    height: 70px; */
   }
 }
 .logo-container {
@@ -19,7 +16,7 @@
   display: flex;
   align-items: center;
   font-size: 2.5rem;
-  transition-duration: 0.5s;
+  transition-duration: 0.4s;
   color: #3f3d56;
 }
 
@@ -39,7 +36,7 @@
   width: 400px;
   height: 100vh;
   background-color: #3f3d56;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
   z-index: 100;
 }
 
@@ -67,8 +64,7 @@
 
 /*todo ----- NAVBAR STYLES SECTION -----  */
 /* @import url(https://fonts.googleapis.com/css?family=Raleway); */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
 h2 {
   vertical-align: center;
   text-align: center;
@@ -87,12 +83,18 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-
+.navbar-company-name {
+  display: none;
+  @media screen and (min-width: 600px) {
+    display: block;
+  }
+}
 .top-nav {
+  bottom: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: #00baf0;
   background: linear-gradient(to left, #e76f51, #f4a261);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -101,6 +103,9 @@ body::-webkit-scrollbar {
   padding: 1em;
   position: fixed;
   width: 100vw;
+  @media screen and (min-width: 600px) {
+    top: 0;
+  }
 }
 
 .menu {
@@ -123,7 +128,7 @@ body::-webkit-scrollbar {
   height: 30px;
   border: none;
   filter: invert(100%);
-  transition-duration: 0.5s;
+  transition-duration: 0.4s;
 
   @media screen and (max-width: 500px) {
     display: none;
@@ -196,8 +201,8 @@ body::-webkit-scrollbar {
   }
   .menu {
     position: absolute;
-    top: 0;
-    margin-top: 50px;
+    bottom: 100%; /* Adjusted to top */
+    /* margin-bottom: 50px; */
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -224,7 +229,7 @@ body::-webkit-scrollbar {
     padding: 0.5em 0;
     width: 100%;
     color: #fff;
-    background-color: #222;
+    background-color: #3f3d56;
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
@@ -241,7 +246,7 @@ body::-webkit-scrollbar {
   padding: 10px 20px;
   font-size: 1.5rem;
   box-shadow: 1px 1px 2px #333;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .action-bar {
@@ -410,4 +415,56 @@ body::-webkit-scrollbar {
 .button-section.active {
   background-color: #2a9d8f;
   color: #fff;
+}
+
+/*todo: ----- FOOTER SECTION STYLES -----  */
+.footer-section-container {
+  display: none;
+  @media screen and (min-width: 600px) {
+    width: 50%;
+    /* position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    background-color: #d5d5d5;
+    box-shadow: 2px 2px 4px #333;
+    font-size: 2rem;
+    margin: auto;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+}
+
+.footer-links-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-links-container ul {
+  padding: 15px;
+}
+
+.footer-links-container li {
+  list-style: none;
+  padding: 15px;
+}
+
+.footer-links-container li:hover {
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 1px 1px 2px #3f3d56;
+}
+
+.footer-links {
+  width: 50px;
+}
+
+/*//todo ----- CALENDAR COMPONENT STYLES -----  */
+.calendar-component {
+  height: 400px;
+  margin: 30px 10px;
+  @media screen and (min-width: 600px) {
+    height: 700px;
+    margin: 50px;
+  }
 }

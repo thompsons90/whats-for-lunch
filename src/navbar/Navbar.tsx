@@ -8,7 +8,7 @@ const Navbar: React.FC<NavProps> = ({ navItems }) => {
       <section className="top-nav">
         <a href="/" className="logo-container">
           <img src={logo} />
-          What's for Lunch?
+          <span className="navbar-company-name">What's for Lunch?</span>
         </a>
         <input id="menu-toggle" type="checkbox" />
         <label className="menu-button-container" htmlFor="menu-toggle">

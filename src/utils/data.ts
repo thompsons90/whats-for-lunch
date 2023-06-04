@@ -1,4 +1,4 @@
-// TODO: Each recipe will be an object with an id, recipeTypeSelectedValue, main name,ingredientsArray, preferred side options, new/classic recipeStatus, prerequisite meal, total time, recipeRatingi 3 & recipeDirections
+// TODO: Each recipe will be an object with an id, recipeTypeSelectedValue, main name,ingredientsArray, preferred side options, new/classic recipeStatus, prerequisite meal, total time, recipeRatingi 3 &
 
 export const recipeData = [
   {
@@ -17,6 +17,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Heat broth in large sauce pan with ranch, black pepper, & chicken till boiling. Cut each biscuit in half length wise, then each half into 4 pieces; add to boiling mix. Reduce heat to medium; simmer uncovered 5 - 7 mins stirring frequently until dumplings are cooked through. Stir in cheddar cheese to melt, serve!",
   },
@@ -33,6 +34,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections: "",
   },
   {
@@ -49,6 +51,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections: "",
   },
   {
@@ -69,6 +72,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Preheat oven to 350° F. Optional: cook 1 1/2 cups of rice. Mix crushed crackers, melted butter, & poppy seeds together in bowl then set aside. Spray 9-in square baking dish with non-stick spray, layer with rice. Stir cream of chicken, sour cream, & shredded chicken together in separate bowl, layer over rice. Layer grated cheddar cheese. Top with cracker mix. Bake ~25 - 30 minutes",
   },
@@ -86,6 +90,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Boil water in a medium pot. Open & heat chilli in a small pot. Add hotdogs to boiling water for 3 - 5 mins. Serve!",
   },
@@ -103,6 +108,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Make Mac n Cheese. Boil hotdogs 3 - 5 mins in small pot. Serve!",
   },
@@ -124,6 +130,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Mix ground beef, onion soup mix, & worcestershire sauce in a medium - large bowl. Heat a splash of cooking oil in a frying pan. Shape and cook beef mix until cooked through, 5 - 7 mins per side (place lid on top to help circulate heat through mix). Optional: cook bacon. Turn off heat and place cheese on top while preparing plates/buns. Serve!",
   },
@@ -145,6 +152,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Heat a drizzle of butter oil to low heat, place slice of bread in pan and wipe to cover surface area with buttery oil. Once golden brown, turn over and toast for just a moment, place butter side down on plate. Repeat 2 more times. Cook bacon. While waiting for bread to toast, add lettuce & tomato on top of first slice, add mayo to second slice & place on top of tomato, add bacon, ham, and turkey, then top with last slice of bread (butter on outside, mayo on inside). Serve!",
   },
@@ -166,6 +174,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Season ground beef in a walled skillet and brown, I use a wooden spoon to break up & stir the meat as it cooks. Optional: heat butter in separate skillet and fry flour tortilla. Serve!",
   },
@@ -186,6 +195,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Season ground beef in a walled skillet and brown, I use a wooden spoon to break up & stir the meat as it cooks. Spray 9-in square cooking dish with non-stick spray, unroll the crescent rolls to line the bottom of the dish, layer beef, cheese, and then unroll the rest of the crescent roll over the top. Follow crescent roll baking instructions or until golden brown. Serve!",
   },
@@ -202,6 +212,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Combine ingredientsArray in the slow cooker and heat on high for four hours. Serve! ",
   },
@@ -222,6 +233,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Brown ground beef with taco seasoning, after browned add cream of mushroom, enchilada sauce, & chilies. Spray pan, layer tortillas (divided into 4ths), then layer meat mix, cheese, repeat. Fridge overnight. Bake at 325 for 45 mins. Serve! ",
   },
@@ -240,6 +252,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Heat chicken in a skillet & add veggies, fry tortilla in butter in separate skillet, combine ingredientsArray. Serve!",
   },
@@ -252,6 +265,7 @@ export const recipeData = [
     ingredientsArray: [""],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections: "",
   },
   {
@@ -270,6 +284,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Boil chicken broth with onions & bell peppers till veggies are tender. Make a roux w/stick of butter & flour, stir constantly till brown. Add can of broth gradually to roux, stirring constantly to prevent lumps then add to other broth. Debone & shred chicken, adding to broth. Keep on low boil, cut sausage slices then into 4ths, brown in skillet & add to gumbo. Serve over rice!",
   },
@@ -287,6 +302,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Brown meat with taco seasoning, add beans & rice, simmer. Serve!",
   },
@@ -299,6 +315,7 @@ export const recipeData = [
     ingredientsArray: ["Fast Fixin's brand frozen steak fingers"],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections: "Follow bag instructions. Serve!",
   },
   {
@@ -310,6 +327,7 @@ export const recipeData = [
     ingredientsArray: ["Fast Fixin's brand frozen chicken fried steak"],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections: "Follow bag instructions. Serve!",
   },
   {
@@ -321,6 +339,7 @@ export const recipeData = [
     ingredientsArray: ["Fast Fixin's brand frozen chicken fried chicken"],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections: "Follow bag instructions. Serve!",
   },
   {
@@ -337,6 +356,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Sort & wash beans, put in crockpot with crockpot filled about 1/2 with water. Add 14 bouillion cubes if cooking whole package of beans. Cook on high all day. About an hour before serving, cut sausage into 4ths & brown in skillet, add to beans. Serve over rice!",
   },
@@ -356,6 +376,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Preheat oven to 425°, melt butter in a 9x13 baking dish in oven. While butter is melting, stir together bisquick, paprika, salt, & pepper in a bowl. Coat each drumstick & place in baking dish with melted butter. Spray with butter before putting in oven & once during baking. Bake for 30 mins, flip and back additional 15 - 25 mins. Serve!",
   },
@@ -368,6 +389,7 @@ export const recipeData = [
     ingredientsArray: ["pork chops", "seasoning"],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections: "Oven or skillet to cook pork chops. Serve!",
   },
   {
@@ -379,6 +401,7 @@ export const recipeData = [
     ingredientsArray: ["pork roast kit"],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections: "Follow instructions. Serve!",
   },
   {
@@ -390,6 +413,7 @@ export const recipeData = [
     ingredientsArray: ["pulled pork", "hamburger buns"],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections: "Heat pulled pork, put on buns. Serve!",
   },
   {
@@ -401,6 +425,7 @@ export const recipeData = [
     ingredientsArray: ["corndogs"],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections: "Heat corndogs. Serve!",
   },
   {
@@ -412,6 +437,7 @@ export const recipeData = [
     ingredientsArray: ["chili", "Fritos", "shredded cheddar cheese"],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections: "Heat chili & combine. Serve!",
   },
   {
@@ -423,6 +449,7 @@ export const recipeData = [
     ingredientsArray: ["pizza"],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections: "Order pizza. Serve!",
   },
   {
@@ -434,6 +461,7 @@ export const recipeData = [
     ingredientsArray: ["fish sticks"],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections: "Heat. Serve!",
   },
   {
@@ -445,6 +473,7 @@ export const recipeData = [
     ingredientsArray: ["popcorn shrimp"],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections: "Heat. Serve!",
   },
   {
@@ -456,6 +485,7 @@ export const recipeData = [
     ingredientsArray: ["toquitos"],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections: "Heat. Serve!",
   },
   {
@@ -467,6 +497,7 @@ export const recipeData = [
     ingredientsArray: ["steak", "marinade", "seasoning"],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Marinade in steak overnight or several hours. Take out of fridge ~30 mins before heating, tenderize. Heat grill/frying pan w/oil in order to sear each side. Season steak & cook. Serve!",
   },
@@ -479,6 +510,7 @@ export const recipeData = [
     ingredientsArray: ["Tony's jambalaya mix", "1 lb+ chicken, sausage"],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections: "Instructions on box. Serve!",
   },
   {
@@ -494,6 +526,7 @@ export const recipeData = [
     ],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Cut crescent rolls & hotdogs. Preheat oven to 350°. Roll hotdogs & cheese in crescent rolls. Heat 10+ mins until rolls are right consistency. Serve!",
   },
@@ -506,6 +539,7 @@ export const recipeData = [
     ingredientsArray: ["soup", "bread", "sliced cheese"],
     recipeStatus: "classic",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Put soup(s) on low heat on stove top. Butter a slice of bread and low heat in frying pan. Layer cheese and buttered slice of bread on top. Flip and make sure both sides are golden brown. Serve!",
   },
@@ -528,6 +562,7 @@ export const recipeData = [
     ],
     recipeStatus: "new",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Preheat oven to 350°. In a large bowl mix beef, Worcestershire sauce, onion soup mix, & eggs thoroughly. Place meat mix on a large parchment-lined baking sheet; shape into two 6x8-in rectangles, each about 1/2-in thick. Bake until 160° internal temp, 15-20 mins. Meanwhile, without separating rolls, cut bread in half horizontally. Optional: Spread 1/4 cup dressing over bottom half. Blot meat w/paper towel to remove excess fat; top meat w/cheese & return to oven. Bake 2-3 mins for cheese to melt. Place meat on bottom halves of rolls; spread remaining 1/4 cup dressing. Layer w/desired condiments. Replace top halves of rolls, butter the tops, & sprinkle sesame seeds. Cut into sandwiches. Serve!",
   },
@@ -549,6 +584,7 @@ export const recipeData = [
     ],
     recipeStatus: "new",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Preheat oven to 475°. Brown beef, drain. Stir in chiles, oregano, cumin, & salt. Cook over medium-low heat until heated through 3 - 4 mins. Brush one side of each tortilla w/butter. Spoon 1/2 cup meat mix over half of unbuttered side, sprinkle w/cheese, fold in half. Place on lightly greased baking sheet, optional: sprinkle paprika. Bake until crisp 8 - 10 mins. Cut & serve!",
   },
@@ -569,6 +605,7 @@ export const recipeData = [
     ],
     recipeStatus: "new",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Brown beef w/taco seasoning. Drain & wipe skillet clean. Top tortilla w/beef & cheese, roll. In same skillet over medium-high heat, brown chimichanga in oil on all sides. Serve!",
   },
@@ -591,6 +628,7 @@ export const recipeData = [
     ],
     recipeStatus: "new",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Preheat oven to 350°. In large bowl, whisk eggs & milk. Stir in cheese, oats, onion, carrot, & salt. Crumble beef into mixture & mix. Shape into 8 loaves; place in lightly sprayed 13x9 baking dish. In small bowl, combine ketchup & brown sugar, spoon over loaves. Bake uncovered 25 - 30 mins. Serve!",
   },
@@ -607,6 +645,7 @@ export const recipeData = [
     ],
     recipeStatus: "new",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections: "Bake the chicken, fry the bacon, add with ranch. Enjoy!",
   },
   {
@@ -626,6 +665,7 @@ export const recipeData = [
     ],
     recipeStatus: "new",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Combine beef, breadcrumbs, seasoning, & salt, mix. Flatten into two 1/2-inch thick rounds. Put cheese in rounds and fold edges over (stuff it). Bake at 425° F for 20 mins. While meatloaves bake, heat a drizzle of oil in a large pan over medium-high heat. Add bell pepper and onion; cook, stirring occasionally until browned & tender (7 - 8 mins). Add 2 Tbsp water; cook, stirring until water has evaporated & veggies are tender. Season w/salt & stir in 1 Tbsp butter until melted. Turn off heat; cover to keep warm. While veggies cook, in a small bowl, combine 3 Tbsp ketchup & 2 Tsp brown sugar. Remove meatloaves after 20 mins, brush glaze over them and sprinkle with cheese. Return meatloaves to oven 3 - 5 mins to melt cheese, top w/veggies. Serve!",
   },
@@ -642,6 +682,7 @@ export const recipeData = [
     ],
     recipeStatus: "new",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Preheat oven 450° F, peel garlic, finely chop 1 clove. Halve, peel, & finely chop onion. In a medium bowl, soak slice of bread w/3 Tbsp water; break up w/hands until pasty. Stir in beef, chopped garlic, 2 Tbsp onion, salt, & pepper; form into 1-inch balls. Cook 10 - 12 mins. Meanwhile, melt 1 Tbsp butter in large pan over medium heat. Add onion, pinch of salt & pepper. Cook, stirring until lightly browned, 8 - 10 mins. Add 1 Tbsp flour; stir until lightly browned, 1 minute.  Slowly stir in 3/4 Cup water & beef stock concentrate. Simmer 2 - 4 mins, reduce to low heat. Add meatballs to pan w/gravy & stir to coat. Serve over mashed potatoes!",
   },
@@ -661,6 +702,7 @@ export const recipeData = [
     ],
     recipeStatus: "new",
     recipeRating: 3,
+    recipePrice: 0,
     recipeDirections:
       "Bake the chicken, fry the bacon, assemble sandwich. Enjoy!",
   },

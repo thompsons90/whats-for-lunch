@@ -12,6 +12,7 @@ import Navbar from "../../navbar/Navbar";
 import { navItems } from "../../App";
 import ModalPlanMeal from "../../modals/planMeal/ModalPlanMeal";
 import MasterPage from "../MasterPage";
+import FooterSection from "../../footer/Footer";
 
 const localizer = dateFnsLocalizer({
   format,
@@ -57,10 +58,17 @@ const CalendarPage: FC = () => {
   const [allEvents, setAllEvents] = useState<Event[]>(initialEvents);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
-  const [modalPlanMeal, setModalPlanMeal] = useState({
-    mainRecipeName: null,
-    recipeTypeSelectedValue: null,
-    mealCategory: null,
+  const [modalPlanMeal, setModalPlanMeal] = useState<{
+    mainRecipeName: string;
+    recipeTypeSelectedValue: string;
+    mealCategory: string;
+    mealCategoryOptions: string[];
+    startDate: Date;
+    endDate: Date;
+  }>({
+    mainRecipeName: "",
+    recipeTypeSelectedValue: "",
+    mealCategory: "",
     mealCategoryOptions: [
       "Breakfast",
       "Brunch",
@@ -72,20 +80,6 @@ const CalendarPage: FC = () => {
     startDate: selectedDate || new Date(),
     endDate: new Date(),
   });
-
-  const handleDateSelect = (date: Date) => {
-    setSelectedDate(date);
-    setIsOpen(true);
-    console.log("clicked calendar");
-  };
-
-  const handleAddEvent = () => {
-    if (newEvent.title && newEvent.start && newEvent.end) {
-      const updatedEvents = [...allEvents, newEvent] as Event[];
-      setAllEvents(updatedEvents);
-      setNewEvent({ title: "", allDay: true, start: null, end: null });
-    }
-  };
 
   const handleButtonClick = (): void => {
     setIsOpen(true);
@@ -105,15 +99,18 @@ const CalendarPage: FC = () => {
               isOpen={isOpen}
               setIsOpen={setIsOpen}
               selectedDate={selectedDate}
+              setSelectedDate={setSelectedDate}
+              modalPlanMeal={modalPlanMeal}
+              setModalPlanMeal={setModalPlanMeal}
             />
 
             <Calendar
+              className="calendar-component"
               localizer={localizer}
               events={allEvents}
               startAccessor={(event) => event.start || new Date()}
               endAccessor={(event) => event.end || new Date()}
-              style={{ height: 500, margin: "50px" }}
-              className="calendar-component"
+              // style={{ height: 700, margin: "50px" }}
               selectable
               onSelectSlot={(slotInfo) => {
                 setSelectedDate(slotInfo.start);
@@ -131,31 +128,3 @@ const CalendarPage: FC = () => {
 export default CalendarPage;
 
 // todo: initial add meal logic
-{
-  /* <h1>Calendar</h1>
-      <h2>Add New Meal</h2>
-      <div>
-        <input
-          type="text"
-          placeholder="Add Meal"
-          style={{ width: "20%", marginRight: "10px" }}
-          value={newEvent.title}
-          onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })}
-        />
-        <DatePicker
-          placeholderText="Start Date"
-          // style={{ marginRight: "10px" }}
-          selected={newEvent.start}
-          onChange={(start) => setNewEvent({ ...newEvent, start })}
-        />
-        <DatePicker
-          placeholderText="End Date"
-          // style={{ marginRight: "10px" }}
-          selected={newEvent.end}
-          onChange={(end) => setNewEvent({ ...newEvent, end })}
-        />
-        <button style={{ marginTop: "10px" }} onClick={handleAddEvent}>
-          Add Meal
-        </button>
-      </div> */
-}

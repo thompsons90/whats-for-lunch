@@ -3,6 +3,9 @@ import MasterPage from "../MasterPage";
 import SearchBar from "../search/SearchBar";
 import { recipeData } from "../../utils/data";
 import RecipeCards from "../../cards/RecipeCards";
+import { TestData } from "../../utils/testdata";
+import ApiData from "../../api/FetchData";
+import ApiDataComponent from "../../api/FetchData";
 
 enum DataSource {
   // Combined as the default
@@ -14,7 +17,12 @@ enum DataSource {
 }
 
 export const CookBookPage = () => {
-  const [filteredRecipes, setFilteredRecipes] = useState(recipeData); // Initialize with all recipes
+  const [myRecipes, setMyRecipes] = useState(recipeData);
+  const [theirRecipes, setTheirRecipes] = useState(TestData);
+  const [combinedRecipe, setCombinedRecipe] = useState([
+    ...recipeData,
+    ...TestData,
+  ]);
   const [activeSource, setActiveSource] = useState(DataSource.Combined);
 
   const handleSearch = (searchTerm: string) => {
@@ -22,11 +30,12 @@ export const CookBookPage = () => {
     const filtered = recipeData.filter((recipe) =>
       recipe.mainRecipeName.toLowerCase().includes(searchTerm.toLowerCase())
     );
-
-    setFilteredRecipes(filtered); // Update the filtered recipes
+    setMyRecipes(filtered);
+    setTheirRecipes(filtered);
+    setCombinedRecipe(filtered);
   };
 
-  //todo: Use an enum to switch between searching through the API cookbook, user cookbook, and combined cookbook
+  //todo: is there a way to move the search container out of the way if the user scrolls down
 
   const handleButtonClick = (source: DataSource) => {
     setActiveSource(source);
@@ -49,6 +58,7 @@ export const CookBookPage = () => {
         break;
     }
   };
+  console.log(ApiData);
 
   return (
     <div className="pageContainer">
@@ -89,13 +99,38 @@ export const CookBookPage = () => {
                   </div>
                 </button>
               </div>
+              <div>
+                <ApiDataComponent />
+              </div>
+              {/*//todo: Need to add a filter by category  */}
               <div style={{ marginTop: "15px" }}>
                 <SearchBar onSearch={handleSearch} />
               </div>
             </div>
             <div className="cookbook-page-recipe-container">
-              <RecipeCards recipes={filteredRecipes} />{" "}
-              {/* Pass the filtered recipes to RecipeCards */}
+              <>
+                {activeSource === DataSource.Combined ? (
+                  <>
+                    <RecipeCards recipes={combinedRecipe} />{" "}
+                  </>
+                ) : (
+                  ""
+                )}
+                {activeSource === DataSource.Users ? (
+                  <>
+                    <RecipeCards recipes={myRecipes} />{" "}
+                  </>
+                ) : (
+                  ""
+                )}
+                {activeSource === DataSource.Ours ? (
+                  <>
+                    <RecipeCards recipes={theirRecipes} />{" "}
+                  </>
+                ) : (
+                  ""
+                )}
+              </>
             </div>
           </div>
         }

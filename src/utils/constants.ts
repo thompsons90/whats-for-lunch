@@ -34,6 +34,25 @@ export interface ModalProps {
   isOpen: boolean;
   setIsOpen: Dispatch<SetStateAction<boolean>>;
   selectedDate: Date | null;
+  setSelectedDate: Dispatch<SetStateAction<Date | null>>;
+  modalPlanMeal: {
+    mainRecipeName: string | null;
+    recipeTypeSelectedValue: string | null;
+    mealCategory: string | null;
+    mealCategoryOptions: string[];
+    startDate: Date;
+    endDate: Date;
+  };
+  setModalPlanMeal: Dispatch<
+    SetStateAction<{
+      mainRecipeName: string;
+      recipeTypeSelectedValue: string;
+      mealCategory: string;
+      mealCategoryOptions: string[];
+      startDate: Date;
+      endDate: Date;
+    }>
+  >;
 }
 
 export type FormValues = {
@@ -59,4 +78,12 @@ export interface MasterPageProps {
 
 export interface SearchBarProps {
   onSearch: (searchTerm: string) => void;
+}
+
+export interface FilterOptions {
+  mainRecipeName: string;
+  recipeTypeSelectedValue: string;
+  totalTimeMinutes: number;
+  recipePrice: number;
+  recipeRating: number;
 }

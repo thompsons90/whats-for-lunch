@@ -4,14 +4,18 @@ import "react-datepicker/dist/react-datepicker.css";
 import Navbar from "../navbar/Navbar";
 import { navItems } from "../App";
 import { MasterPageProps } from "../utils/constants";
+import FooterSection from "../footer/Footer";
 
 const MasterPage: FC<MasterPageProps> = ({ pageContent }) => {
   return (
-    <div className="page-wrapper">
+    <div className="master-page-wrapper">
       <div>
         <Navbar navItems={navItems} />
       </div>
       <div className="page-content-container">{pageContent}</div>
+      <div>
+        <FooterSection />
+      </div>
     </div>
   );
 };

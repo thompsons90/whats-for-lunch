@@ -6,6 +6,7 @@ import { navItems } from "../../App";
 import Navbar from "../../navbar/Navbar";
 import MasterPage from "../MasterPage";
 import { NavProps } from "../../utils/constants";
+import FooterSection from "../../footer/Footer";
 // import Navbar2 from "../../navbar/Navbar2";
 
 export const LandingPage: React.FC<NavProps> = (
@@ -33,6 +34,7 @@ export const LandingPage: React.FC<NavProps> = (
         <Navbar navItems={navItems} />
       </div>
       <div className="landing-wrapper">
+        <h2 className="home-page-catchy-text3">What's for Lunch?</h2>
         <div className="home-page-top-half">
           <div className="page-content-container1">
             <div className="home-page-list">
@@ -41,20 +43,18 @@ export const LandingPage: React.FC<NavProps> = (
                 <span className="home-page-catchy-word">Great </span>
                 Food
               </h1>
-              <ul style={{ paddingBottom: "50px" }}>
+              <ul style={{ paddingBottom: "30px" }}>
                 <li>
                   The go-to app to find new recipes, plan your meals, and never
                   forget your{" "}
-                  <span style={{ borderBottom: "2px solid #3f3d56" }}>
-                    favorites!
-                  </span>
+                  <span style={{ fontStyle: "italic" }}>favorites!</span>
                 </li>
               </ul>
               {/*//! ----- What should the action be; modal, link?  */}
-              <div>
+              <div className="action-container">
                 <ul>
                   <li className="action-bar">
-                    <a href="/search" id="search">
+                    <a href="/cookbook" id="search">
                       {/* <div className="search-bar-icon" /> */}
                       Let's Eat!
                     </a>
@@ -65,38 +65,66 @@ export const LandingPage: React.FC<NavProps> = (
             <div className="home-page-image1-container" />
           </div>
           <h2 className="home-page-catchy-text2">What about dinner?</h2>
+
+          <h3 className="home-page-mobile-scroll-text">Scroll for More</h3>
         </div>
         <div className="page-content-container2">
           <ul className="home-page-links-description-container">
             <li className="home-page-container2-links-description">
-              <a href="/calendar">
-                <h3>Calendar</h3>
-              </a>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
-              ratione minus modi eos saepe quae cum eaque consectetur nisi,
-              deleniti ipsa. Consectetur tenetur omnis voluptatem, sequi libero
-              quasi enim aperiam?
-            </li>
-            <li className="home-page-container2-links-description">
-              <a href="/cookbook">
+              <a href="/cookbook" className="home-page-bottom-links">
                 <h3>Cookbook</h3>
               </a>
               <p>
-                Save your favorite recipes from our <span>Cookbook</span> or add
-                your own
+                Whether it's your cookbook or ours, effortlessly search for
+                recipes based on ingredients, dietary preferences, cooking time,
+                and more. Quickly find the perfect recipe for any occasion or
+                save your favorite recipes for easy access and create
+                personalized collections to suit your tastes and interests.
               </p>
             </li>
+
             <li className="home-page-container2-links-description">
-              <a href="/search">
+              <a href="/calendar" className="home-page-bottom-links">
+                <h3>Calendar</h3>
+              </a>
+              <p>
+                Our Meal Planner Calendar is user-friendly and designed to
+                simplify your meal planning process. You can effortlessly
+                organize and schedule your meals for the week, ensuring a
+                well-balanced and stress-free dining experience. Say goodbye to
+                last-minute meal decisions and hello to a healthier, more
+                enjoyable dining routine.
+              </p>
+            </li>
+
+            <li className="home-page-container2-links-description">
+              <a href="/search" className="home-page-bottom-links">
                 <h3>Discover</h3>
               </a>
               <p>
-                Tired of the same recipes week in and week out? Discover new
-                ones from our cookbook and be excited to gather friends and
-                family around your new found culinary skills!
+                Discover a world of culinary delights with a vast collection of
+                recipes from various cuisines and categories. From appetizers to
+                desserts, Cookbook has you covered. Browse through a rich
+                library of curated recipes or unleash your creativity by adding
+                your own unique recipes to personalize your cookbook.
               </p>
             </li>
           </ul>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              margin: "100px",
+            }}
+          >
+            <div className="action-bar">
+              <a href="/cookbook" id="search">
+                {/* <div className="search-bar-icon" /> */}
+                START HERE
+              </a>
+            </div>
+          </div>
+          <FooterSection />
         </div>
       </div>
     </>

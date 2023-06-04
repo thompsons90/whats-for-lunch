@@ -1,21 +1,25 @@
 /*todo: ----- PAGE STYLE SECTION ----- */
 /*? ----- GENERAL PAGE STYLING -----  */
-.landing-wrapper {
-  /* display: flex; */
-  background-color: #fff;
-}
-.page-wrapper {
+body {
   /* background-color: #2a9d8f; */
   background-image: url("../../public/images/foodBackground.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
 }
-
+.landing-wrapper {
+  /* display: flex; */
+  background-color: #fff;
+}
+.master-page-wrapper {
+  /* height: 100vh; */
+}
 .page-content-container {
-  padding-top: 50px;
+  @media screen and (min-width: 600px) {
+    padding-top: 25px;
+  }
 }
 
 /*? ----- HOME PAGE STYLES ----- */
@@ -24,13 +28,19 @@
 }
 
 .page-content-container1 {
+  width: 100vw;
   display: flex;
   justify-content: space-around;
-  /* border: 2px solid red; */
   background-color: #d5d5d5;
-  /* height: 700px; */
   flex: 1;
-  border-radius: 15% 0% 25% 0% / 100% 15% 50% 15%;
+  box-shadow: 2px 2px 4px #636363;
+  @media screen and (min-width: 900px) {
+    /* display: flex;
+    justify-content: space-around;
+    background-color: #d5d5d5;
+    flex: 1; */
+    border-radius: 15% 0% 25% 0% / 100% 15% 50% 15%;
+  }
 }
 
 .home-page-catchy-text1,
@@ -39,7 +49,10 @@
   color: #3f3d56;
 }
 .home-page-catchy-text1 {
-  font-size: 7rem;
+  font-size: 2rem;
+  @media screen and (min-width: 600px) {
+    font-size: 7rem;
+  }
 }
 
 .home-page-catchy-word {
@@ -52,97 +65,117 @@
 }
 
 .home-page-list {
-  padding-top: 70px;
   font-size: 1.5rem;
   color: #3f3d56;
-  display: block;
-  width: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 600px) {
+    display: block;
+    padding-top: 70px;
+    width: 700px;
+  }
 }
 .home-page-list li {
   list-style: none;
 }
 
 .home-page-image1-container {
-  background-image: url("../../public/images/eatingTogether.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: #fff;
-  padding: 50px;
-  border-radius: 15px;
-  width: 700px;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  display: none;
+  @media screen and (min-width: 600px) {
+    background-image: url("../../public/images/eatingTogether.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    width: 700px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
 }
 
+.action-container {
+  margin: 15px 0px;
+}
 .page-content-container2 {
-  padding-top: 50px;
-  /* border: 2px solid blue; */
-  height: 100vh;
-  flex: 2;
-  /* display: flex;
-    justify-content: center;
-    flex-direction: row; */
+  padding: 0;
+  @media screen and (min-width: 600px) {
+    padding-top: 50px;
+    flex: 2;
+  }
 }
 
 .home-page-catchy-text2 {
-  font-size: 5rem;
-  padding-top: 50px;
+  display: none;
+  @media screen and (min-width: 600px) {
+    display: block;
+    font-size: 5rem;
+    padding-top: 50px;
+  }
+}
+.home-page-catchy-text3 {
+  color: #2a9d8f;
+  font-size: 2.5rem;
+  padding: 75px 0;
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
+}
+
+.home-page-mobile-scroll-text {
+  /* border: 2px solid #fff; */
+  text-align: center;
+  background-color: #3f3d56;
+  color: #fff;
+  padding: 25px;
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
 }
 
 .home-page-links-container,
 .home-page-links-description-container {
-  border: 2px solid red;
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
+  @media screen and (min-width: 900px) {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 .home-page-links-container {
   padding-top: 150px;
 }
 
-/* .home-page-container2-links {
-    font-size: 2.5rem;
-    color: #3f3d56;
-    text-decoration: none;
-    display: flex;
-    font-size: 1rem;
-    border: 2px solid green;
-    padding: 25px;
-  }
-  
-  .home-page-container2-links li {
-    text-decoration: none;
-    list-style: none;
-  }
-  
-  .home-page-container2-icons {
-    width: 70px;
-    height: 60px;
-    border: 2px solid #3f3d56;
-    background-color: #2a9d8f;
-    border-radius: 16px;
-    padding: 10px 20px;
-    transition-duration: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-
 .home-page-container2-links-description {
-  border: 2px solid blue;
-  height: 500px;
+  /* border: 2px solid blue; */
+  /* height: 500px; */
   text-align: center;
   flex: 1;
   padding: 15px;
 }
-.home-page-container2-links-description h3 {
-  font-size: 2.5rem;
-}
-.home-page-container2-links-description a {
+/* .home-page-bottom-links h3 {
+} */
+.home-page-bottom-links {
+  font-size: 2rem;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.home-page-bottom-links:hover {
+  font-size: 2.5rem;
+  color: #2a9d8f;
+}
+
+.home-page-links-description-container li:not(:last-child) {
+  border-right: 1px solid #3f3d56;
+}
+
+.home-page-links-description-container li:not(:first-child) {
+  border-left: 1px solid #3f3d56;
 }
 
 /*? ----- CALENDAR PAGE STYLES ----- */
@@ -207,8 +240,8 @@
 }
 
 .cookbook-page-search-container {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 100;
   /* background-color: white; */
   z-index: 999;
   text-align: center;
@@ -221,6 +254,8 @@
 .cookbook-page-recipe-container {
   overflow-y: auto;
   max-height: calc(100vh - 250px);
+  margin-top: 275px;
+  /* position: fixed; */
 }
 
 .cookbook-page-recipe-container::-webkit-scrollbar {
@@ -243,14 +278,23 @@
 /*? ----- About Page Styles -----  */
 .about-page-container {
   background-color: #d5d5d5;
-  width: 75%;
-  padding: 100px;
-  border-radius: 25% 0% 25% 0% / 25% 15% 25% 15%;
+  @media screen and (min-width: 600px) {
+    width: 75%;
+    padding: 100px;
+    border-radius: 25% 0% 25% 0% / 25% 15% 25% 15%;
+    margin-bottom: 50px;
+  }
+}
+
+.about-page-description-container {
+  padding: 0 10px;
 }
 
 .about-page-description-container h1 {
-  padding-top: 15px;
-  padding-bottom: 10px;
+  @media screen and (min-width: 600px) {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
 }
 
 .about-page-description-container p {

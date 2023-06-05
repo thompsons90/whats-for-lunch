@@ -13,9 +13,10 @@ body {
   /* display: flex; */
   background-color: #fff;
 }
-.master-page-wrapper {
-  /* height: 100vh; */
-}
+/* .master-page-wrapper {
+   height: 100vh; 
+} */
+
 .page-content-container {
   @media screen and (min-width: 600px) {
     padding-top: 25px;
@@ -214,6 +215,17 @@ body {
 }
 
 /*? ----- Cookbook Page Styles ----- */
+.cookbook-page-desktop-container {
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}
+.cookbook-page-mobile-container {
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
+}
+
 .pageContainer {
   overflow: hidden;
 }

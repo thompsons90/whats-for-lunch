@@ -293,89 +293,122 @@ body::-webkit-scrollbar {
   height: 20px;
 }
 
-/*todo: ----- RECIPE CARD STYLES SECTION -----  */
+/*todo: ----- COOKBOOK RECIPE CARD STYLES SECTION -----  */
+/*? -----MOBILE STYLES -----  */
+.mobile-recipe-modal-container {
+  margin: 20px;
+}
+
+.mobile-recipe-names {
+  color: #fff;
+}
+/*? ----- DESKTOP STYLES -----  */
 .recipe-card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  @media screen and (min-width: 600px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .recipe-card {
-  width: 300px;
-  height: 400px;
-  perspective: 1000px;
-  margin: 10px;
-  cursor: pointer;
-  position: relative;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
+  @media screen and (min-width: 600px) {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
 }
 
 .recipe-card.flipped {
-  transform: rotateY(180deg);
+  @media screen and (min-width: 600px) {
+    transform: rotateY(180deg);
+  }
 }
 
 .recipe-card-front,
 .recipe-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border: 2px solid #3f3d56;
-  box-shadow: 1px 1px 2px #3f3d56;
-  border-radius: 10px;
-  border-color: #fff;
-  border-width: 10px;
-  color: #fff;
-  text-shadow: 1px 1px 2px #333;
-  background: linear-gradient(to left, #3f3d56, #5e5b85);
+  @media screen and (min-width: 600px) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px solid #3f3d56;
+    box-shadow: 1px 1px 2px #3f3d56;
+    border-radius: 10px;
+    border-color: #fff;
+    border-width: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #333;
+    background: linear-gradient(to left, #3f3d56, #5e5b85);
+  }
 }
 
 .recipe-card-front {
-  /* background-color: #6f6c94; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  @media screen and (min-width: 600px) {
+    /* background-color: #6f6c94; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .recipe-card-back {
-  /* background-color: #6f6c94; */
-  transform: rotateY(180deg);
-  display: flex;
-  align-items: flex-start;
-  padding: 10px;
-  overflow-y: scroll; /* Enable scrolling */
-  scrollbar-width: thin; /* Hide the scrollbar for Firefox */
-  -ms-overflow-style: none; /* Hide the scrollbar for IE and Edge */
-  scrollbar-color: transparent transparent; /* Hide the scrollbar for Chrome and Safari */
+  @media screen and (min-width: 600px) {
+    /* background-color: #6f6c94; */
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    overflow-y: scroll; /* Enable scrolling */
+    scrollbar-width: thin; /* Hide the scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide the scrollbar for IE and Edge */
+    scrollbar-color: transparent transparent; /* Hide the scrollbar for Chrome and Safari */
+  }
 }
 
 .recipe-card-back::-webkit-scrollbar {
-  width: 0.5em; /* Set the width of the scrollbar for Chrome and Safari */
+  @media screen and (min-width: 600px) {
+    width: 0.5em; /* Set the width of the scrollbar for Chrome and Safari */
+  }
 }
 
 .recipe-card-back::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Hide the scrollbar thumb for Chrome and Safari */
+  @media screen and (min-width: 600px) {
+    background-color: transparent; /* Hide the scrollbar thumb for Chrome and Safari */
+  }
 }
 
 .recipe-card h2 {
-  margin-bottom: 10px;
+  @media screen and (min-width: 600px) {
+    margin-bottom: 10px;
+  }
 }
 
 .recipe-card ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  @media screen and (min-width: 600px) {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 }
 
 .recipe-card li {
-  margin-bottom: 5px;
+  @media screen and (min-width: 600px) {
+    margin-bottom: 5px;
+  }
 }
 
 .recipe-card li:last-child {
-  margin-bottom: 0;
+  @media screen and (min-width: 600px) {
+    margin-bottom: 0;
+  }
 }
 
 /*todo: ----- Enum Button on Cookbook Page -----  */

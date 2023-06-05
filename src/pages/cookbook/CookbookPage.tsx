@@ -6,6 +6,7 @@ import RecipeCards from "../../cards/RecipeCards";
 import { TestData } from "../../utils/testdata";
 import ApiData from "../../api/FetchData";
 import ApiDataComponent from "../../api/FetchData";
+import ModalMobileRecipe from "../../modals/mobile/ModalMobileRecipe";
 
 enum DataSource {
   // Combined as the default
@@ -24,6 +25,7 @@ export const CookBookPage = () => {
     ...TestData,
   ]);
   const [activeSource, setActiveSource] = useState(DataSource.Combined);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleSearch = (searchTerm: string) => {
     // Filter the recipes based on the search term
@@ -64,75 +66,86 @@ export const CookBookPage = () => {
     <div className="pageContainer">
       <MasterPage
         pageContent={
-          <div className="page-container">
-            <div className="cookbook-page-search-container">
-              <div className="cookbook-page-search-text">
-                <h1>Cookbook</h1>
-                <p>Search from your cookbook, ours, or combined!</p>
-              </div>
+          <>
+            <div className="cookbook-page-desktop-container">
+              <div className="page-container">
+                <div className="cookbook-page-search-container">
+                  <div className="cookbook-page-search-text">
+                    <h1>Cookbook</h1>
+                    <p>Search from your cookbook, ours, or combined!</p>
+                  </div>
 
-              <div className="cookbook-page-button-container">
-                <button className="button">
-                  <div
-                    className={`button-section ${
-                      activeSource === DataSource.Combined ? "active" : ""
-                    }`}
-                    onClick={() => handleButtonClick(DataSource.Combined)}
-                  >
-                    Combined
+                  <div className="cookbook-page-button-container">
+                    <button className="button">
+                      <div
+                        className={`button-section ${
+                          activeSource === DataSource.Combined ? "active" : ""
+                        }`}
+                        onClick={() => handleButtonClick(DataSource.Combined)}
+                      >
+                        Combined
+                      </div>
+                      <div
+                        className={`button-section ${
+                          activeSource === DataSource.Users ? "active" : ""
+                        }`}
+                        onClick={() => handleButtonClick(DataSource.Users)}
+                      >
+                        Yours
+                      </div>
+                      <div
+                        className={`button-section ${
+                          activeSource === DataSource.Ours ? "active" : ""
+                        }`}
+                        onClick={() => handleButtonClick(DataSource.Ours)}
+                      >
+                        Ours
+                      </div>
+                    </button>
                   </div>
-                  <div
-                    className={`button-section ${
-                      activeSource === DataSource.Users ? "active" : ""
-                    }`}
-                    onClick={() => handleButtonClick(DataSource.Users)}
-                  >
-                    Yours
+                  <div>
+                    <ApiDataComponent />
                   </div>
-                  <div
-                    className={`button-section ${
-                      activeSource === DataSource.Ours ? "active" : ""
-                    }`}
-                    onClick={() => handleButtonClick(DataSource.Ours)}
-                  >
-                    Ours
+                  {/*//todo: Need to add a filter by category  */}
+                  <div style={{ marginTop: "15px" }}>
+                    <SearchBar onSearch={handleSearch} />
                   </div>
-                </button>
-              </div>
-              <div>
-                <ApiDataComponent />
-              </div>
-              {/*//todo: Need to add a filter by category  */}
-              <div style={{ marginTop: "15px" }}>
-                <SearchBar onSearch={handleSearch} />
+                </div>
+                <div className="cookbook-page-recipe-container">
+                  <>
+                    {activeSource === DataSource.Combined ? (
+                      <>
+                        <RecipeCards recipes={combinedRecipe} />{" "}
+                      </>
+                    ) : (
+                      ""
+                    )}
+                    {activeSource === DataSource.Users ? (
+                      <>
+                        <RecipeCards recipes={myRecipes} />{" "}
+                      </>
+                    ) : (
+                      ""
+                    )}
+                    {activeSource === DataSource.Ours ? (
+                      <>
+                        <RecipeCards recipes={theirRecipes} />{" "}
+                      </>
+                    ) : (
+                      ""
+                    )}
+                  </>
+                </div>
               </div>
             </div>
-            <div className="cookbook-page-recipe-container">
-              <>
-                {activeSource === DataSource.Combined ? (
-                  <>
-                    <RecipeCards recipes={combinedRecipe} />{" "}
-                  </>
-                ) : (
-                  ""
-                )}
-                {activeSource === DataSource.Users ? (
-                  <>
-                    <RecipeCards recipes={myRecipes} />{" "}
-                  </>
-                ) : (
-                  ""
-                )}
-                {activeSource === DataSource.Ours ? (
-                  <>
-                    <RecipeCards recipes={theirRecipes} />{" "}
-                  </>
-                ) : (
-                  ""
-                )}
-              </>
+            <div className="cookbook-page-mobile-container">
+              <ModalMobileRecipe
+                recipes={combinedRecipe}
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+              />
             </div>
-          </div>
+          </>
         }
       />
     </div>

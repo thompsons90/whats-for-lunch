@@ -8,6 +8,8 @@ export default defineConfig({
   base: "/whats-for-lunch/",
 });
 
+// testing base deploy
+
 // this define removes the inline testing code from production build
 // export default defineConfig({
 //   define: {

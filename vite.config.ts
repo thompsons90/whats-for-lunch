@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/whats-for-lunch",
+  // base: "/whats-for-lunch",
 });
 
 // this define removes the inline testing code from production build

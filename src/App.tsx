@@ -39,10 +39,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route
-          path="/whats-for-lunch"
-          element={<LandingPage navItems={navItems} />}
-        />
+        <Route path="/" element={<LandingPage navItems={navItems} />} />
         <Route path="/calendar" element={<CalendarPage />} />
         <Route path="/cookbook" element={<CookBookPage />} />
         <Route path="/search" element={<SearchPage />} />

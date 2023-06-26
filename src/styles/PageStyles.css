@@ -2,7 +2,7 @@
 /*? ----- GENERAL PAGE STYLING -----  */
 body {
   /* background-color: #2a9d8f; */
-  background-image: url("../../public/images/foodBackground.png");
+  background-image: url("../../public/images/foodBackground.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

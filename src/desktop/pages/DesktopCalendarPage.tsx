@@ -11,8 +11,11 @@ import "react-datepicker/dist/react-datepicker.css";
 import Navbar from "../../navbar/Navbar";
 import { navItems } from "../../App";
 import ModalPlanMeal from "../../modals/planMeal/ModalPlanMeal";
-import MasterPage from "../MasterPage";
+// import MasterPage from "../MasterPage";
 import FooterSection from "../../footer/Footer";
+import { Nullable } from "vitest";
+import { EventItems } from "../../utils/constants";
+import MasterPage from "../../pages/MasterPage";
 
 const localizer = dateFnsLocalizer({
   format,
@@ -43,18 +46,14 @@ const initialEvents: Event[] = [
   },
 ];
 
-const CalendarPage: FC = () => {
-  const [newEvent, setNewEvent] = useState<{
-    title: string;
-    allDay: boolean;
-    start: Date | null;
-    end: Date | null;
-  }>({
+const DesktopCalendarPage: FC = () => {
+  const [newEvent, setNewEvent] = useState<Nullable<EventItems>>({
     title: "",
     allDay: true,
     start: null,
     end: null,
   });
+
   const [allEvents, setAllEvents] = useState<Event[]>(initialEvents);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
@@ -125,6 +124,6 @@ const CalendarPage: FC = () => {
   );
 };
 
-export default CalendarPage;
+export default DesktopCalendarPage;
 
 // todo: initial add meal logic

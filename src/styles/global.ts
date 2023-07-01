@@ -13,3 +13,5 @@ export const theme = {
   primaryLight: "#EFFFFA",
   primaryHover: "#343078",
 };
+
+export type Nullable<T> = T | null;

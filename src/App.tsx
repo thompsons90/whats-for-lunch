@@ -10,11 +10,11 @@ import {
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import "./App.css";
-import { AboutPage } from "./pages/about/AboutPage";
-import CalendarPage from "./pages/calendar/Calendar";
+import { AboutPage } from "./pages/AboutPage";
+import CalendarPage from "./pages/Calendar";
 // import { ContactPage } from "./pages/contact/Contact";
-import { CookBookPage } from "./pages/cookbook/CookbookPage";
-import { LandingPage } from "./pages/landing/LandingPage";
+import { CookbookPage } from "./pages/CookbookPage";
+import { LandingPage } from "./pages/LandingPage";
 import { SearchPage } from "./pages/search/SearchPage";
 import homeIcon from "../public/images/home.png";
 import calendarIcon from "../public/images/calendar-pen.png";
@@ -23,6 +23,7 @@ import cookbookIcon from "../public/images/book-alt.png";
 import aboutIcon from "../public/images/comment-info.png";
 import contactIcon from "../public/images/user.png";
 import { NavItem } from "./utils/constants";
+import { ViewportProvider } from "./hooks/useViewport";
 
 export const navItems: NavItem[] = [
   // { title: "Home", path: "/", icon: homeIcon, mobile: true },
@@ -37,16 +38,18 @@ const App = () => {
   // const [navigateToCalendar, setNavigateToCalendar] = useState(false);
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<LandingPage navItems={navItems} />} />
-        <Route path="/calendar" element={<CalendarPage />} />
-        <Route path="/cookbook" element={<CookBookPage />} />
-        <Route path="/search" element={<SearchPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        {/* <Route path="/contact" element={<ContactPage />} /> */}
-      </Routes>
-    </Router>
+    <ViewportProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage navItems={navItems} />} />
+          <Route path="/calendar" element={<CalendarPage />} />
+          <Route path="/cookbook" element={<CookbookPage />} />
+          <Route path="/search" element={<SearchPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          {/* <Route path="/contact" element={<ContactPage />} /> */}
+        </Routes>
+      </Router>
+    </ViewportProvider>
   );
 };
 

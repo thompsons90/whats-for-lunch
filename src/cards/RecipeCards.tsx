@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { recipeData } from "../utils/data";
 import { Recipe, RecipeCardsProps } from "../utils/constants";
 // import { fetchData } from "../api/FetchData";

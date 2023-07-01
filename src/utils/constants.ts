@@ -3,6 +3,13 @@ import { Dispatch, ReactNode, SetStateAction } from "react";
 export const URL =
   "https://api.spoonacular.com/recipes/complexSearch?apiKey=a1ef51f91daf4b5baae9c503d96f2982";
 
+export interface EventItems {
+  title: string;
+  allDay: boolean;
+  start: Date | null;
+  end: Date | null;
+}
+
 export interface NavItem {
   title: string;
   path: string;
@@ -23,7 +30,8 @@ export interface Recipe {
   ingredientsArray: string[];
   recipeStatus: string;
   recipeRating: number;
-  recipeDirections: string;
+  recipePrice: number;
+  recipeDirections: string[];
 }
 
 export interface RecipeCardsProps {

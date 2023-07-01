@@ -1,10 +1,11 @@
-import React from "react";
+import { memo } from "react";
 import { navItems } from "../../App";
 import Navbar from "../../navbar/Navbar";
-import MasterPage from "../MasterPage";
+// import MasterPage from "../MasterPage";
 import FooterSection from "../../footer/Footer";
+import MasterPage from "../../pages/MasterPage";
 
-export const AboutPage = () => {
+export const DesktopAboutPage = memo(() => {
   return (
     <div className="pageContainer">
       <MasterPage
@@ -82,4 +83,4 @@ export const AboutPage = () => {
       />
     </div>
   );
-};
+});

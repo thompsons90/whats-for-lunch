@@ -1,6 +1,6 @@
 import React from "react";
-import { navItems } from "../../App";
-import Navbar from "../../navbar/Navbar";
+import { navItems } from "../App";
+import Navbar from "../navbar/Navbar";
 
 export const ContactPage = () => {
   return (

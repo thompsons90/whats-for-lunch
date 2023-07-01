@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { NavProps } from "../../utils/constants";
 import { navItems } from "../../App";
+import Navbar from "../../navbar/Navbar";
+import FooterSection from "../../footer/Footer";
+// import { navItems } from "../App";
 // import ModalRecipe from "../../modals/recipe/ModalRecipe";
 // import Navbar from "../../navbar/Navbar";
-import Navbar from "../../navbar/Navbar";
-import MasterPage from "../MasterPage";
-import { NavProps } from "../../utils/constants";
-import FooterSection from "../../footer/Footer";
+// import Navbar from "../navbar/Navbar";
+// import MasterPage from "./MasterPage";
+// import { NavProps } from "../utils/constants";
+// import FooterSection from "../footer/Footer";
 // import Navbar2 from "../../navbar/Navbar2";
 
-export const LandingPage: React.FC<NavProps> = (
+export const DesktopLandingPage: React.FC<NavProps> = (
   {
     // navigateToCalendar,
     // setNavigateToCalendar,

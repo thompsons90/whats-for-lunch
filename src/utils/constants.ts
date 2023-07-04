@@ -23,8 +23,9 @@ export interface NavProps {
 
 export interface Recipe {
   id: number;
+  foodImage: string;
   mainRecipeName: string;
-  recipeTypeSelectedValue: string[];
+  recipeTypeSelectedValue: string;
   totalTimeMinutes: number;
   prerequisiteMeal?: string;
   ingredientsArray: string[];

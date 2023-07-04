@@ -177,3 +177,118 @@ body::-webkit-scrollbar {
     border-bottom: 1px solid #444;
   }
 }
+
+/*todo: ----- MOBILE RECIPE CARD STYLES -----  */
+/* mobile-recipe-card {
+  width: 200px;
+} */
+
+.mobile-recipe-card-container {
+  position: fixed;
+  top: 35;
+  left: 0;
+  width: 100vw;
+  /* height: 100%; */
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.mobile-recipe-image-container {
+  width: 115px;
+  padding: 5px;
+}
+
+.mobile-recipe-card-info-container {
+  width: 90px;
+}
+
+.mobile-recipe-card-info-container ul {
+  list-style: none;
+}
+
+#mobile-recipe-card-name {
+  font-size: 0.75rem;
+  font-weight: bold;
+  word-wrap: "break-word";
+}
+
+#mobile-recipe-card-group {
+  font-size: 0.5rem;
+}
+
+/*? ----- MOBILE RECIPE DETAILS STYLES -----  */
+.global-back-button {
+  background-image: url("../../../public/images/back.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-color: #2a9d8f;
+  border-radius: 16px;
+}
+
+.mobile-recipe-card-details {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3f3d56;
+}
+
+.mobile-recipe-card-details-info {
+  /* display: flex; */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: #d5d5d5;
+  padding: 25px;
+  margin: 25px;
+  color: #3f3d56;
+  border-radius: 5px;
+}
+
+.mobile-recipe-card-details-ingredients ul {
+  list-style-type: none;
+}
+
+.mobile-recipe-card-details-ingredients ul li::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../../public/images/spoon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.mobile-recipe-card-details-ingredients li {
+  padding-top: 5px;
+}
+
+.mobile-recipe-card-details-directions li {
+  padding-top: 5px;
+  margin-left: 15px;
+  padding-left: 5px;
+  list-style: number;
+}
+
+.mobile-recipe-directions-button {
+  background-color: #2a9d8f;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 1px 1px 2px #3f3d56;
+}
+
+/* todo: ----- MOBILE SEARCH PAGE STYLES ----- */
+.mobile-search-page-top-container {
+  position: fixed;
+  top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}

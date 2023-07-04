@@ -1,8 +1,9 @@
 export const recipeData = [
   {
     id: 0,
+    foodImage: "food image",
     mainRecipeName: "Chicken & Dumplings",
-    recipeTypeSelectedValue: ["Chicken"],
+    recipeTypeSelectedValue: "Chicken",
     totalTimeMinutes: 0,
     prerequisiteMeal: "rotisserie chicken",
     ingredientsArray: [
@@ -25,8 +26,9 @@ export const recipeData = [
   },
   {
     id: 1,
+    foodImage: "food image",
     mainRecipeName: "Ham & Cheese Sliders",
-    recipeTypeSelectedValue: ["Hamburger/Sandwich"],
+    recipeTypeSelectedValue: "Sandwich",
     totalTimeMinutes: 0,
     ingredientsArray: [
       "Kings Hawaiian rolls",
@@ -37,12 +39,19 @@ export const recipeData = [
     recipeStatus: "classic",
     recipeRating: 3,
     recipePrice: 0,
-    recipeDirections: [""],
+    recipeDirections: [
+      "Use serrated knife to slice the rolls in half, don't pull the rolls individually apart.",
+      "Layer the ham and cheese onto the bottom slab of rolls, place the top slab of rolls back on.",
+      "Whisk together melted butter, poppy seeds, worcestershire sauce, salt, & pepper. Brush on top of the rolls",
+      "Let the rolls sit 5 - 10 mins, then bake 20 mins at 350°F.",
+      "Serve!",
+    ],
   },
   {
     id: 2,
+    foodImage: "food image",
     mainRecipeName: "Crescent Roll Chicken Wraps",
-    recipeTypeSelectedValue: ["Chicken"],
+    recipeTypeSelectedValue: "Chicken",
     totalTimeMinutes: 0,
     prerequisiteMeal: "rotisserie chicken",
     ingredientsArray: [
@@ -58,8 +67,9 @@ export const recipeData = [
   },
   {
     id: 3,
+    foodImage: "food image",
     mainRecipeName: "Poppy Seed Chicken",
-    recipeTypeSelectedValue: ["Chicken"],
+    recipeTypeSelectedValue: "Chicken",
     totalTimeMinutes: 70,
     prerequisiteMeal: "rotisserie chicken",
     ingredientsArray: [
@@ -88,8 +98,9 @@ export const recipeData = [
   },
   {
     id: 4,
+    foodImage: "food image",
     mainRecipeName: "Chilli Cheese Dogs",
-    recipeTypeSelectedValue: ["Hotdog"],
+    recipeTypeSelectedValue: "Hotdog",
     totalTimeMinutes: 10,
     prerequisiteMeal: "none",
     ingredientsArray: [
@@ -110,8 +121,9 @@ export const recipeData = [
   },
   {
     id: 5,
+    foodImage: "food image",
     mainRecipeName: "Pasta Carbonara",
-    recipeTypeSelectedValue: ["Pasta"],
+    recipeTypeSelectedValue: "Pasta",
     totalTimeMinutes: 20,
     ingredientsArray: [
       "8 oz spaghetti",
@@ -137,8 +149,9 @@ export const recipeData = [
   },
   {
     id: 6,
-    mainRecipeName: "Cheeseburgers",
-    recipeTypeSelectedValue: ["Hamburger/Sandwich"],
+    foodImage: "food image",
+    mainRecipeName: "Hamburgers",
+    recipeTypeSelectedValue: "Sandwich",
     totalTimeMinutes: 20,
     prerequisiteMeal: "none",
     ingredientsArray: [
@@ -165,8 +178,9 @@ export const recipeData = [
   },
   {
     id: 7,
+    foodImage: "food image",
     mainRecipeName: "Club Sandwich",
-    recipeTypeSelectedValue: ["Hamburger/Sandwich"],
+    recipeTypeSelectedValue: "Sandwich",
     totalTimeMinutes: 10,
     prerequisiteMeal: "none",
     ingredientsArray: [
@@ -195,8 +209,9 @@ export const recipeData = [
   },
   {
     id: 8,
+    foodImage: "food image",
     mainRecipeName: "Soft Tacos",
-    recipeTypeSelectedValue: ["Mexican"],
+    recipeTypeSelectedValue: "Mexican",
     totalTimeMinutes: 10,
     prerequisiteMeal: "none",
     ingredientsArray: [
@@ -220,8 +235,9 @@ export const recipeData = [
   },
   {
     id: 9,
+    foodImage: "food image",
     mainRecipeName: "Taco Casserole",
-    recipeTypeSelectedValue: ["Mexican"],
+    recipeTypeSelectedValue: "Mexican",
     totalTimeMinutes: 25,
     prerequisiteMeal: "none",
     ingredientsArray: [
@@ -248,8 +264,9 @@ export const recipeData = [
   },
   {
     id: 10,
+    foodImage: "food image",
     mainRecipeName: "Slow-cooker Meatballs",
-    recipeTypeSelectedValue: ["Italian"],
+    recipeTypeSelectedValue: "Italian",
     totalTimeMinutes: 240,
     prerequisiteMeal: "none",
     ingredientsArray: [
@@ -268,8 +285,9 @@ export const recipeData = [
   },
   {
     id: 11,
+    foodImage: "food image",
     mainRecipeName: "Enchilada Casserole",
-    recipeTypeSelectedValue: ["Mexican"],
+    recipeTypeSelectedValue: "Mexican",
     totalTimeMinutes: 45,
     prerequisiteMeal: "Prep the night before.",
     ingredientsArray: [
@@ -296,8 +314,9 @@ export const recipeData = [
   },
   {
     id: 12,
+    foodImage: "food image",
     mainRecipeName: "Chicken Fajita",
-    recipeTypeSelectedValue: ["Mexican"],
+    recipeTypeSelectedValue: "Mexican",
     totalTimeMinutes: 0,
     prerequisiteMeal: "none",
     ingredientsArray: [
@@ -319,8 +338,9 @@ export const recipeData = [
   },
   {
     id: 13,
+    foodImage: "food image",
     mainRecipeName: "Chicken Tortilla Soup",
-    recipeTypeSelectedValue: ["Soup"],
+    recipeTypeSelectedValue: "Soup",
     totalTimeMinutes: 0,
     prerequisiteMeal: "1st Monday Soup place",
     ingredientsArray: [],
@@ -331,8 +351,9 @@ export const recipeData = [
   },
   {
     id: 14,
+    foodImage: "food image",
     mainRecipeName: "Gumbo",
-    recipeTypeSelectedValue: ["Soup"],
+    recipeTypeSelectedValue: "Soup",
     totalTimeMinutes: 0,
     prerequisiteMeal: "Rotisserie Chicken",
     ingredientsArray: [
@@ -358,8 +379,9 @@ export const recipeData = [
   },
   {
     id: 15,
+    foodImage: "food image",
     mainRecipeName: "Mexican Goulash",
-    recipeTypeSelectedValue: ["Mexican"],
+    recipeTypeSelectedValue: "Mexican",
     totalTimeMinutes: 0,
     prerequisiteMeal: "none",
     ingredientsArray: [
@@ -380,8 +402,9 @@ export const recipeData = [
   },
   {
     id: 16,
+    foodImage: "food image",
     mainRecipeName: "Steak Fingers",
-    recipeTypeSelectedValue: ["Beef"],
+    recipeTypeSelectedValue: "Beef",
     totalTimeMinutes: 0,
     prerequisiteMeal: "none",
     ingredientsArray: ["Fast Fixin's brand frozen steak fingers"],
@@ -392,8 +415,9 @@ export const recipeData = [
   },
   {
     id: 17,
+    foodImage: "food image",
     mainRecipeName: "Chicken Fried Steak",
-    recipeTypeSelectedValue: ["Beef"],
+    recipeTypeSelectedValue: "Beef",
     totalTimeMinutes: 0,
     prerequisiteMeal: "none",
     ingredientsArray: ["Fast Fixin's brand frozen chicken fried steak"],
@@ -404,8 +428,9 @@ export const recipeData = [
   },
   {
     id: 18,
+    foodImage: "food image",
     mainRecipeName: "Chicken Fried Chicken",
-    recipeTypeSelectedValue: ["Chicken"],
+    recipeTypeSelectedValue: "Chicken",
     totalTimeMinutes: 0,
     prerequisiteMeal: "none",
     ingredientsArray: ["Fast Fixin's brand frozen chicken fried chicken"],
@@ -416,8 +441,9 @@ export const recipeData = [
   },
   {
     id: 19,
+    foodImage: "food image",
     mainRecipeName: "Red Beans & Rice",
-    recipeTypeSelectedValue: ["Soup"],
+    recipeTypeSelectedValue: "Soup",
     totalTimeMinutes: 480,
     prerequisiteMeal: "none",
     ingredientsArray: [
@@ -440,8 +466,9 @@ export const recipeData = [
   },
   {
     id: 20,
+    foodImage: "food image",
     mainRecipeName: "Oven Fried Chicken Drumsticks",
-    recipeTypeSelectedValue: ["Chicken"],
+    recipeTypeSelectedValue: "Chicken",
     totalTimeMinutes: 90,
     prerequisiteMeal: "none",
     ingredientsArray: [
@@ -468,8 +495,9 @@ export const recipeData = [
   },
   {
     id: 21,
+    foodImage: "food image",
     mainRecipeName: "Pork Chops",
-    recipeTypeSelectedValue: ["Pork"],
+    recipeTypeSelectedValue: "Pork",
     totalTimeMinutes: 0,
     prerequisiteMeal: "none",
     ingredientsArray: ["pork chops", "seasoning"],
@@ -480,8 +508,9 @@ export const recipeData = [
   },
   {
     id: 22,
+    foodImage: "food image",
     mainRecipeName: "Pork Roast",
-    recipeTypeSelectedValue: ["Pork"],
+    recipeTypeSelectedValue: "Pork",
     totalTimeMinutes: 0,
     prerequisiteMeal: "none",
     ingredientsArray: ["pork roast kit"],
@@ -492,8 +521,9 @@ export const recipeData = [
   },
   {
     id: 23,
+    foodImage: "food image",
     mainRecipeName: "Pulled Pork Sandwich",
-    recipeTypeSelectedValue: ["Pork", "Hamburger/Sandwich"],
+    recipeTypeSelectedValue: "Sandwich",
     totalTimeMinutes: 0,
     prerequisiteMeal: "none",
     ingredientsArray: ["pulled pork", "hamburger buns"],
@@ -504,8 +534,9 @@ export const recipeData = [
   },
   {
     id: 24,
+    foodImage: "food image",
     mainRecipeName: "Corndogs",
-    recipeTypeSelectedValue: ["Hotdog"],
+    recipeTypeSelectedValue: "Hotdog",
     totalTimeMinutes: 20,
     prerequisiteMeal: "none",
     ingredientsArray: ["corndogs"],
@@ -516,8 +547,9 @@ export const recipeData = [
   },
   {
     id: 25,
+    foodImage: "food image",
     mainRecipeName: "Chili Frito Pie",
-    recipeTypeSelectedValue: ["Soup"],
+    recipeTypeSelectedValue: "Soup",
     totalTimeMinutes: 10,
     prerequisiteMeal: "none",
     ingredientsArray: ["chili", "Fritos", "shredded cheddar cheese"],
@@ -528,8 +560,9 @@ export const recipeData = [
   },
   {
     id: 26,
+    foodImage: "food image",
     mainRecipeName: "Pizza",
-    recipeTypeSelectedValue: ["Italian"],
+    recipeTypeSelectedValue: "Italian",
     totalTimeMinutes: 20,
     prerequisiteMeal: "none",
     ingredientsArray: ["pizza"],
@@ -540,8 +573,9 @@ export const recipeData = [
   },
   {
     id: 27,
+    foodImage: "food image",
     mainRecipeName: "Fish Sticks",
-    recipeTypeSelectedValue: ["Seafood"],
+    recipeTypeSelectedValue: "Seafood",
     totalTimeMinutes: 20,
     prerequisiteMeal: "none",
     ingredientsArray: ["fish sticks"],
@@ -552,8 +586,9 @@ export const recipeData = [
   },
   {
     id: 28,
+    foodImage: "food image",
     mainRecipeName: "Popcorn Shrimp",
-    recipeTypeSelectedValue: ["Seafood"],
+    recipeTypeSelectedValue: "Seafood",
     totalTimeMinutes: 20,
     prerequisiteMeal: "none",
     ingredientsArray: ["popcorn shrimp"],
@@ -564,8 +599,9 @@ export const recipeData = [
   },
   {
     id: 29,
+    foodImage: "food image",
     mainRecipeName: "Toquitos",
-    recipeTypeSelectedValue: ["Mexican"],
+    recipeTypeSelectedValue: "Mexican",
     totalTimeMinutes: 20,
     prerequisiteMeal: "none",
     ingredientsArray: ["toquitos"],
@@ -576,8 +612,9 @@ export const recipeData = [
   },
   {
     id: 30,
+    foodImage: "food image",
     mainRecipeName: "Steak",
-    recipeTypeSelectedValue: ["Beef"],
+    recipeTypeSelectedValue: "Beef",
     totalTimeMinutes: 20,
     prerequisiteMeal: "none",
     ingredientsArray: ["steak", "marinade", "seasoning"],
@@ -596,8 +633,9 @@ export const recipeData = [
   },
   {
     id: 31,
+    foodImage: "food image",
     mainRecipeName: "Jambalaya",
-    recipeTypeSelectedValue: ["Soup"],
+    recipeTypeSelectedValue: "Soup",
     totalTimeMinutes: 20,
     prerequisiteMeal: "rotisserie chicken",
     ingredientsArray: ["Tony's jambalaya mix", "1 lb+ chicken, sausage"],
@@ -608,8 +646,9 @@ export const recipeData = [
   },
   {
     id: 32,
+    foodImage: "food image",
     mainRecipeName: "Pigs in a Blanket",
-    recipeTypeSelectedValue: ["Hotdog"],
+    recipeTypeSelectedValue: "Hotdog",
     totalTimeMinutes: 20,
     prerequisiteMeal: "none",
     ingredientsArray: [
@@ -630,8 +669,9 @@ export const recipeData = [
   },
   {
     id: 33,
+    foodImage: "food image",
     mainRecipeName: "Soup & Grilled Cheese",
-    recipeTypeSelectedValue: ["Soup", "Hamburger/Sandwich"],
+    recipeTypeSelectedValue: "Soup",
     totalTimeMinutes: 20,
     prerequisiteMeal: "none",
     ingredientsArray: ["soup", "bread", "sliced cheese"],
@@ -648,8 +688,9 @@ export const recipeData = [
   },
   {
     id: 34,
+    foodImage: "food image",
     mainRecipeName: "Cheese Burger Sliders",
-    recipeTypeSelectedValue: ["Hamburger/Sandwich"],
+    recipeTypeSelectedValue: "Sandwich",
     totalTimeMinutes: 30,
     ingredientsArray: [
       "17 oz dinner rolls",
@@ -683,8 +724,9 @@ export const recipeData = [
   },
   {
     id: 35,
+    foodImage: "food image",
     mainRecipeName: "Beef Quesadillas",
-    recipeTypeSelectedValue: ["Mexican"],
+    recipeTypeSelectedValue: "Mexican",
     totalTimeMinutes: 30,
     ingredientsArray: [
       "3/4 lb ground beef",
@@ -716,8 +758,9 @@ export const recipeData = [
   },
   {
     id: 36,
+    foodImage: "food image",
     mainRecipeName: "Beef Chimichanga",
-    recipeTypeSelectedValue: ["Mexican"],
+    recipeTypeSelectedValue: "Mexican",
     totalTimeMinutes: 30,
     ingredientsArray: [
       "1 lb ground beef",
@@ -742,8 +785,9 @@ export const recipeData = [
   },
   {
     id: 37,
+    foodImage: "food image",
     mainRecipeName: "Mini Meatloaves",
-    recipeTypeSelectedValue: ["Beef"],
+    recipeTypeSelectedValue: "Beef",
     totalTimeMinutes: 40,
     ingredientsArray: [
       "3/4 lb ground beef",
@@ -774,8 +818,9 @@ export const recipeData = [
   },
   {
     id: 38,
+    foodImage: "food image",
     mainRecipeName: "Chicken Bacon Ranch",
-    recipeTypeSelectedValue: ["Chicken"],
+    recipeTypeSelectedValue: "Chicken",
     totalTimeMinutes: 0,
     ingredientsArray: [
       "Boneless, skinless chicken breasts",
@@ -792,8 +837,9 @@ export const recipeData = [
   },
   {
     id: 39,
+    foodImage: "food image",
     mainRecipeName: "Smothered & Stuffed Meatloaves",
-    recipeTypeSelectedValue: ["Beef"],
+    recipeTypeSelectedValue: "Beef",
     totalTimeMinutes: 40,
     ingredientsArray: [
       "3/4 lb ground beef",
@@ -828,8 +874,9 @@ export const recipeData = [
   },
   {
     id: 40,
+    foodImage: "food image",
     mainRecipeName: "Gravy Lover's Meatballs",
-    recipeTypeSelectedValue: ["Beef"],
+    recipeTypeSelectedValue: "Beef",
     totalTimeMinutes: 40,
     ingredientsArray: [
       "Ground beef",
@@ -857,8 +904,9 @@ export const recipeData = [
   },
   {
     id: 41,
+    foodImage: "food image",
     mainRecipeName: "Chicken Bacon Ranch Sandwich",
-    recipeTypeSelectedValue: ["Chicken"],
+    recipeTypeSelectedValue: "Chicken",
     totalTimeMinutes: 0,
     ingredientsArray: [
       "Boneless, skinless chicken breasts",

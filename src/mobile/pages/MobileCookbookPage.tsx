@@ -67,14 +67,18 @@ export const MobileCookbookPage = memo(() => {
           </div>
           <div
             className="mobile-search-page-results-container"
-            style={{ marginTop: "75px", overflow: "auto" }}
+            style={{
+              marginTop: "85px",
+              overflow: "auto",
+            }}
           ></div>
           <div
             className="mobile-search-page-bottom-container"
-            style={{ marginTop: "25px" }}
+            style={{ marginTop: "25px", height: "100%" }}
           >
             <MobileRecipeCards
               recipes={filteredRecipes}
+              filteredRecipes={filteredRecipes}
               flippedRecipeId={flippedRecipeId}
               setFlippedRecipeId={setFlippedRecipeId}
               handleCardFlip={handleCardFlip}

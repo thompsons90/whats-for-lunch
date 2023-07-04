@@ -3,6 +3,7 @@ import { Recipe, RecipeCardsProps } from "../../utils/constants";
 import "../styles/MobileComponentStyles.css";
 
 interface MobileRecipeCardsProps extends RecipeCardsProps {
+  filteredRecipes: Recipe[];
   flippedRecipeId: number | null;
   setFlippedRecipeId: (recipeId: number | null) => void;
   handleCardFlip: (recipeId: number) => void;
@@ -11,12 +12,16 @@ interface MobileRecipeCardsProps extends RecipeCardsProps {
 const MobileRecipeCards = memo(
   ({
     recipes,
+    filteredRecipes,
     flippedRecipeId,
     setFlippedRecipeId,
     handleCardFlip,
   }: MobileRecipeCardsProps) => {
     return (
-      <div className="mobile-recipe-card-container">
+      <div
+        className="mobile-recipe-card-container"
+        style={{ height: filteredRecipes.length >= 10 ? "100%" : "" }}
+      >
         {recipes.map((recipe: Recipe) => (
           <div
             className={`mobile-recipe-card ${

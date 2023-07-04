@@ -185,7 +185,7 @@ body::-webkit-scrollbar {
 
 .mobile-recipe-card-container {
   position: fixed;
-  top: 35;
+  top: 40;
   left: 0;
   width: 100vw;
   /* height: 100%; */

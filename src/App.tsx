@@ -26,11 +26,11 @@ import { NavItem } from "./utils/constants";
 import { ViewportProvider } from "./hooks/useViewport";
 
 export const navItems: NavItem[] = [
-  // { title: "Home", path: "/", icon: homeIcon, mobile: true },
-  { title: "Calendar", path: "/calendar", icon: calendarIcon, mobile: true },
+  { title: "Home", path: "/", icon: homeIcon, mobile: true },
+  // { title: "Calendar", path: "/calendar", icon: calendarIcon, mobile: true },
   { title: "Cookbook", path: "/cookbook", icon: cookbookIcon, mobile: true },
   // { title: "Search", path: "/search", icon: searchIcon, mobile: true },
-  { title: "About", path: "/about", icon: aboutIcon, mobile: false },
+  { title: "About", path: "/about", icon: aboutIcon, mobile: true },
   // { title: "Contact", path: "/contact", icon: contactIcon, mobile: false },
 ];
 
@@ -41,7 +41,7 @@ const App = () => {
     <ViewportProvider>
       <Router>
         <Routes>
-          <Route path="/" element={<LandingPage navItems={navItems} />} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="/calendar" element={<CalendarPage />} />
           <Route path="/cookbook" element={<CookbookPage />} />
           <Route path="/search" element={<SearchPage />} />

@@ -84,29 +84,13 @@ export const MobileLandingPage: React.FC<NavProps> = (
             </li>
 
             <li className="home-page-container2-links-description">
-              <a href="/calendar" className="home-page-bottom-links">
-                <h3>Calendar</h3>
-              </a>
-              <p>
-                Our Meal Planner Calendar is user-friendly and designed to
-                simplify your meal planning process. You can effortlessly
-                organize and schedule your meals for the week, ensuring a
-                well-balanced and stress-free dining experience. Say goodbye to
-                last-minute meal decisions and hello to a healthier, more
-                enjoyable dining routine.
-              </p>
-            </li>
-
-            <li className="home-page-container2-links-description">
               <a href="/search" className="home-page-bottom-links">
-                <h3>Discover</h3>
+                <h3>Chance</h3>
               </a>
               <p>
-                Discover a world of culinary delights with a vast collection of
-                recipes from various cuisines and categories. From appetizers to
-                desserts, Cookbook has you covered. Browse through a rich
-                library of curated recipes or unleash your creativity by adding
-                your own unique recipes to personalize your cookbook.
+                Not sure what to eat? Try our recipe randomizer! With the click
+                of this button, let us take you on a culinary adventure to
+                uncover a classic or discover a new favorite.
               </p>
             </li>
           </ul>

@@ -1,6 +1,6 @@
 import { memo } from "react";
 import { useViewport } from "../../hooks/useViewport";
-import { MobileSearchPage } from "../../mobile/pages/MobileSearchPage";
+// import { MobileSearchPage } from "../../mobile/pages/MobileSearchPage";
 import { DesktopSearchPage } from "../../desktop/pages/DesktopSearchPage";
 
 export const SearchPage = memo(() => {
@@ -8,5 +8,11 @@ export const SearchPage = memo(() => {
   const { width } = useViewport();
   const breakpoint = 600;
 
-  return width < breakpoint ? <MobileSearchPage /> : <DesktopSearchPage />;
+  // return width < breakpoint ? <MobileSearchPage /> : <DesktopSearchPage />;
+
+  return (
+    <>
+      <p>Under Construction</p>
+    </>
+  );
 });

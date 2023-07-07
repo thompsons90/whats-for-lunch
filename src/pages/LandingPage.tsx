@@ -3,6 +3,7 @@ import { useViewport } from "../hooks/useViewport";
 import { DesktopLandingPage } from "../desktop/pages/DesktopLandingPage";
 import { MobileLandingPage } from "../mobile/pages/MobileLandingPage";
 import { navItems } from "../App";
+import { NavProps } from "../utils/constants";
 
 export const LandingPage = memo(() => {
   //? ----- if true: mobile view, if false: desktop view,

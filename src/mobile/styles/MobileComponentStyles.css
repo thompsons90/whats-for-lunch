@@ -202,7 +202,8 @@ body::-webkit-scrollbar {
 }
 
 .mobile-recipe-card-info-container {
-  width: 90px;
+  width: 100px;
+  word-break: break-all;
 }
 
 .mobile-recipe-card-info-container ul {

@@ -40,14 +40,24 @@ const MobileRecipeCards = memo(
                 border: "1px solid black",
                 borderRadius: "5px",
                 backgroundColor: "#d5d5d5",
-                margin: "10px",
+                margin: "5px 0px",
                 padding: 0,
                 height: "100px",
-                width: "150px",
+                width: "175px",
               }}
             >
-              <div className="mobile-recipe-image-container">
-                {recipe.foodImage}
+              <div
+                className="mobile-recipe-image-container"
+                style={{
+                  backgroundImage: `url(${recipe.foodImage})`,
+                  height: "60px",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  marginLeft: "5px",
+                }}
+              >
+                {/* {recipe.foodImage} */}
               </div>
               <div
                 style={{
@@ -59,9 +69,14 @@ const MobileRecipeCards = memo(
               ></div>
               <div
                 className="mobile-recipe-card-info-container"
-                style={{ width: "75px" }}
+                // style={{ wordBreak: "break-word" }}
               >
-                <ul style={{ listStyle: "none" }}>
+                <ul
+                  style={{
+                    listStyle: "none",
+                    marginRight: "5px",
+                  }}
+                >
                   <li id="mobile-recipe-card-name">{recipe.mainRecipeName}</li>
                   <li id="mobile-recipe-card-group">
                     {recipe.recipeTypeSelectedValue}

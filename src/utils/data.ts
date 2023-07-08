@@ -1,7 +1,17 @@
+// import ChickenDumplings from "../../public/images/Food/ChickenDumplings.webp";
+// import HamCheeseSliders from "../../public/images/Food/HamCheeseSliders.webp";
+// import ChickenRollUps from "../../public/images/Food/ChickenRollUps.webp";
+// import PoppySeedChicken from "../../public/images/Food/PoppySeedChicken.webp";
+// import ChilliCheeseDogs from "../../public/images/Food/ChilliCheeseDogs.webp";
+// import Hamburgers from "../../public/images/Food/Hamburgers.webp";
+// import ClubSandwich from "../../public/images/Food/ClubSandwich.webp";
+// import SoftTacos from "../../public/images/Food/SoftTacos.webp";
+// import TacoCasserole from "../../public/images/Food/TacoCasserole.webp";
+
 export const recipeData = [
   {
     id: 0,
-    foodImage: "food image",
+    foodImage: "../../public/images/Food/ChickenDumplings.webp",
     mainRecipeName: "Chicken & Dumplings",
     recipeTypeSelectedValue: "Chicken",
     totalTimeMinutes: 0,
@@ -26,7 +36,7 @@ export const recipeData = [
   },
   {
     id: 1,
-    foodImage: "food image",
+    foodImage: "../../public/images/Food/HamCheeseSliders.webp",
     mainRecipeName: "Ham & Cheese Sliders",
     recipeTypeSelectedValue: "Sandwich",
     totalTimeMinutes: 0,
@@ -49,7 +59,7 @@ export const recipeData = [
   },
   {
     id: 2,
-    foodImage: "food image",
+    foodImage: "../../public/images/Food/ChickenRollUps.webp",
     mainRecipeName: "Crescent Roll Chicken Wraps",
     recipeTypeSelectedValue: "Chicken",
     totalTimeMinutes: 0,
@@ -67,7 +77,7 @@ export const recipeData = [
   },
   {
     id: 3,
-    foodImage: "food image",
+    foodImage: "../../public/images/Food/PoppySeedChicken.webp",
     mainRecipeName: "Poppy Seed Chicken",
     recipeTypeSelectedValue: "Chicken",
     totalTimeMinutes: 70,
@@ -98,7 +108,7 @@ export const recipeData = [
   },
   {
     id: 4,
-    foodImage: "food image",
+    foodImage: "../../public/images/Food/ChilliCheeseDogs.webp",
     mainRecipeName: "Chilli Cheese Dogs",
     recipeTypeSelectedValue: "Hotdog",
     totalTimeMinutes: 10,
@@ -121,7 +131,7 @@ export const recipeData = [
   },
   {
     id: 5,
-    foodImage: "food image",
+    foodImage: "../../public/images/Food/PastaCarbonara.webp",
     mainRecipeName: "Pasta Carbonara",
     recipeTypeSelectedValue: "Pasta",
     totalTimeMinutes: 20,
@@ -149,8 +159,8 @@ export const recipeData = [
   },
   {
     id: 6,
-    foodImage: "food image",
-    mainRecipeName: "Hamburgers",
+    foodImage: "../../public/images/Food/Hamburgers.webp",
+    mainRecipeName: "Burgers",
     recipeTypeSelectedValue: "Sandwich",
     totalTimeMinutes: 20,
     prerequisiteMeal: "none",
@@ -178,7 +188,7 @@ export const recipeData = [
   },
   {
     id: 7,
-    foodImage: "food image",
+    foodImage: "../../public/images/Food/ClubSandwich.webp",
     mainRecipeName: "Club Sandwich",
     recipeTypeSelectedValue: "Sandwich",
     totalTimeMinutes: 10,
@@ -209,7 +219,7 @@ export const recipeData = [
   },
   {
     id: 8,
-    foodImage: "food image",
+    foodImage: "../../public/images/Food/SoftTacos.webp",
     mainRecipeName: "Soft Tacos",
     recipeTypeSelectedValue: "Mexican",
     totalTimeMinutes: 10,
@@ -235,7 +245,7 @@ export const recipeData = [
   },
   {
     id: 9,
-    foodImage: "food image",
+    foodImage: "../../public/images/Food/TacoCasserole.webp",
     mainRecipeName: "Taco Casserole",
     recipeTypeSelectedValue: "Mexican",
     totalTimeMinutes: 25,
@@ -264,7 +274,7 @@ export const recipeData = [
   },
   {
     id: 10,
-    foodImage: "food image",
+    foodImage: "../../public/images/Food/Meatballs.webp",
     mainRecipeName: "Slow-cooker Meatballs",
     recipeTypeSelectedValue: "Italian",
     totalTimeMinutes: 240,
@@ -285,7 +295,7 @@ export const recipeData = [
   },
   {
     id: 11,
-    foodImage: "food image",
+    foodImage: "../../public/images/Food/Enchiladas.webp",
     mainRecipeName: "Enchilada Casserole",
     recipeTypeSelectedValue: "Mexican",
     totalTimeMinutes: 45,
@@ -314,7 +324,7 @@ export const recipeData = [
   },
   {
     id: 12,
-    foodImage: "food image",
+    foodImage: "../../public/images/Food/ChickenFajitas.webp",
     mainRecipeName: "Chicken Fajita",
     recipeTypeSelectedValue: "Mexican",
     totalTimeMinutes: 0,
@@ -338,7 +348,7 @@ export const recipeData = [
   },
   {
     id: 13,
-    foodImage: "food image",
+    foodImage: "../../public/images/Food/ChickenTortillaSoup.webp",
     mainRecipeName: "Chicken Tortilla Soup",
     recipeTypeSelectedValue: "Soup",
     totalTimeMinutes: 0,
@@ -351,7 +361,7 @@ export const recipeData = [
   },
   {
     id: 14,
-    foodImage: "food image",
+    foodImage: "../../public/images/Food/Gumbo.webp",
     mainRecipeName: "Gumbo",
     recipeTypeSelectedValue: "Soup",
     totalTimeMinutes: 0,
@@ -379,7 +389,7 @@ export const recipeData = [
   },
   {
     id: 15,
-    foodImage: "food image",
+    foodImage: "../../public/images/Food/MexicanGoulash.webp",
     mainRecipeName: "Mexican Goulash",
     recipeTypeSelectedValue: "Mexican",
     totalTimeMinutes: 0,
@@ -402,7 +412,7 @@ export const recipeData = [
   },
   {
     id: 16,
-    foodImage: "food image",
+    foodImage: "../../public/images/Food/SteakFingers.webp",
     mainRecipeName: "Steak Fingers",
     recipeTypeSelectedValue: "Beef",
     totalTimeMinutes: 0,

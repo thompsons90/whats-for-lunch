@@ -1,7 +1,8 @@
 import { memo } from "react";
-import { DesktopCookbookPage } from "../desktop/pages/DesktopCookbookPage";
+// import { DesktopCookbookPage } from "../desktop/pages/DesktopCookbookPage";
 import { useViewport } from "../hooks/useViewport";
 import { MobileCookbookPage } from "../mobile/pages/MobileCookbookPage";
+import { DesktopCookbookPage } from "../desktop/pages/DesktopCookbookPage";
 
 export const CookbookPage = memo(() => {
   //? ----- if true: mobile view, if false: desktop view,

@@ -60,15 +60,15 @@ export const DesktopCookbookPage = memo(() => {
     switch (activeSource) {
       case DataSource.Combined:
         setActiveSource(DataSource.Users);
-        console.log("Switched to Data Source 2");
+        // console.log("Switched to Data Source 2");
         break;
       case DataSource.Users:
         setActiveSource(DataSource.Ours);
-        console.log("Switched to Our Data Source");
+        // console.log("Switched to Our Data Source");
         break;
       case DataSource.Ours:
         setActiveSource(DataSource.Combined);
-        console.log("Switched to Data Source 1");
+        // console.log("Switched to Data Source 1");
         break;
     }
   };

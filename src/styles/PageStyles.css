@@ -2,7 +2,7 @@
 /*? ----- GENERAL PAGE STYLING -----  */
 body {
   /* background-color: #2a9d8f; */
-  background-image: url("../../public/images/foodBackground.webp");
+  background-image: url("./../utils//images/background/foodBackground.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -85,7 +85,7 @@ body {
 .home-page-image1-container {
   display: none;
   @media screen and (min-width: 600px) {
-    background-image: url("../../public/images/eatingTogether.svg");
+    background-image: url("../utils/images/icons/eatingTogether.svg");
     background-size: contain;
     background-repeat: no-repeat;
     color: #fff;

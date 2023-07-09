@@ -14,7 +14,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const handleSearch = () => {
     onSearch(searchTerm);
   };
-  console.log(searchTerm);
+  // console.log(searchTerm);
   return (
     <div>
       <input

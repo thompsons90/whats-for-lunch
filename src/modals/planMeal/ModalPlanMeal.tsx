@@ -33,7 +33,7 @@ const ModalPlanMeal = ({ isOpen, setIsOpen, selectedDate }: ModalProps) => {
   // const onSubmit = (data: FormValues) => console.log(data);
 
   const onSubmit = (data: FormValues) => {
-    console.log(data);
+    // console.log(data);
     setModalPlanMeal({
       ...modalPlanMealCopy,
       startDate: selectedDate || new Date(),
@@ -62,7 +62,7 @@ const ModalPlanMeal = ({ isOpen, setIsOpen, selectedDate }: ModalProps) => {
   //   }
   // };
 
-  console.log(modalPlanMeal);
+  // console.log(modalPlanMeal);
   return (
     <>
       {isOpen && (

@@ -31,10 +31,10 @@ export const MobileCookbookPage = memo(() => {
 
   const handleCardFlip = (recipeId: number) => {
     if (flippedRecipeId === recipeId) {
-      console.log("turned back");
+      // console.log("turned back");
       setFlippedRecipeId(null); // Flip the card back to the front if already flipped
     } else {
-      console.log(recipeId);
+      // console.log(recipeId);
       setFlippedRecipeId(recipeId); // Flip the card to the back
     }
   };

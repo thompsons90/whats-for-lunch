@@ -27,7 +27,7 @@ const ApiDataComponent: React.FC = () => {
 
     fetchData();
   }, []);
-  console.log(apiData);
+  // console.log(apiData);
   return (
     <div>
       {/* {apiLoading ? (

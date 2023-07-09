@@ -114,7 +114,7 @@ const DesktopCalendarPage: FC = () => {
               onSelectSlot={(slotInfo) => {
                 setSelectedDate(slotInfo.start);
                 setIsOpen(true);
-                console.log("clicked calendar");
+                // console.log("clicked calendar");
               }}
             />
           </div>

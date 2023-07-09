@@ -8,6 +8,13 @@ import Hamburgers from "../utils/images/Food/Hamburgers.webp";
 import ClubSandwich from "../utils/images/Food/ClubSandwich.webp";
 import SoftTacos from "../utils/images/Food/SoftTacos.webp";
 import TacoCasserole from "../utils/images/food/TacoCasserole.webp";
+import Meatballs from "../utils/images/food/Meatballs.webp";
+import Enchiladas from "../utils/images/food/Enchiladas.webp";
+import ChickenFajitas from "../utils/images/food/ChickenFajitas.webp";
+import ChickenTortillaSoup from "../utils/images/food/ChickenTortillaSoup.webp";
+import Gumbo from "../utils/images/food/Gumbo.webp";
+import MexicanGoulash from "../utils/images/food/MexicanGoulash.webp";
+import SteakFingers from "../utils/images/food/SteakFingers.webp";
 
 export const recipeData = [
   {
@@ -275,7 +282,7 @@ export const recipeData = [
   },
   {
     id: 10,
-    foodImage: "../../utils/images/Food/Meatballs.webp",
+    foodImage: Meatballs,
     mainRecipeName: "Slow-cooker Meatballs",
     recipeTypeSelectedValue: "Italian",
     totalTimeMinutes: 240,
@@ -296,7 +303,7 @@ export const recipeData = [
   },
   {
     id: 11,
-    foodImage: "../../utils/images/Food/Enchiladas.webp",
+    foodImage: Enchiladas,
     mainRecipeName: "Enchilada Casserole",
     recipeTypeSelectedValue: "Mexican",
     totalTimeMinutes: 45,
@@ -325,7 +332,7 @@ export const recipeData = [
   },
   {
     id: 12,
-    foodImage: "../../utils/images/Food/ChickenFajitas.webp",
+    foodImage: ChickenFajitas,
     mainRecipeName: "Chicken Fajita",
     recipeTypeSelectedValue: "Mexican",
     totalTimeMinutes: 0,
@@ -349,7 +356,7 @@ export const recipeData = [
   },
   {
     id: 13,
-    foodImage: "../../utils/images/Food/ChickenTortillaSoup.webp",
+    foodImage: ChickenTortillaSoup,
     mainRecipeName: "Chicken Tortilla Soup",
     recipeTypeSelectedValue: "Soup",
     totalTimeMinutes: 0,
@@ -362,7 +369,7 @@ export const recipeData = [
   },
   {
     id: 14,
-    foodImage: "../../utils/images/Food/Gumbo.webp",
+    foodImage: Gumbo,
     mainRecipeName: "Gumbo",
     recipeTypeSelectedValue: "Soup",
     totalTimeMinutes: 0,
@@ -390,7 +397,7 @@ export const recipeData = [
   },
   {
     id: 15,
-    foodImage: "../../utils/images/Food/MexicanGoulash.webp",
+    foodImage: MexicanGoulash,
     mainRecipeName: "Mexican Goulash",
     recipeTypeSelectedValue: "Mexican",
     totalTimeMinutes: 0,
@@ -413,7 +420,7 @@ export const recipeData = [
   },
   {
     id: 16,
-    foodImage: "../../utils/images/Food/SteakFingers.webp",
+    foodImage: SteakFingers,
     mainRecipeName: "Steak Fingers",
     recipeTypeSelectedValue: "Beef",
     totalTimeMinutes: 0,

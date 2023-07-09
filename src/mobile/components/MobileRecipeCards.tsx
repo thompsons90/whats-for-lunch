@@ -1,8 +1,6 @@
 import { memo } from "react";
 import { Recipe, RecipeCardsProps } from "../../utils/constants";
 import "../styles/MobileComponentStyles.css";
-import chickenIcon from "../../utils/images/food/ChickenDumplings.webp";
-// import icon from './image/ChickenDumplings.webp'
 
 interface MobileRecipeCardsProps extends RecipeCardsProps {
   filteredRecipes: Recipe[];

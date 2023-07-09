@@ -2,31 +2,31 @@ import React, { useEffect, useState } from "react";
 import { URL } from "../utils/constants";
 
 const ApiDataComponent: React.FC = () => {
-  const [apiData, setApiData] = useState<any>(null);
-  const [apiError, setApiError] = useState<string | null>(null);
-  const [apiLoading, setApiLoading] = useState<boolean>(false);
+  // const [apiData, setApiData] = useState<any>(null);
+  // const [apiError, setApiError] = useState<string | null>(null);
+  // const [apiLoading, setApiLoading] = useState<boolean>(false);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setApiLoading(true);
-        const response = await fetch(URL);
-        if (!response.ok) {
-          throw new Error("Error fetching data");
-        }
-        const data = await response.json();
-        setApiData(data);
-        setApiError(null);
-      } catch (error: unknown) {
-        setApiError((error as Error).message);
-        setApiData(null);
-      } finally {
-        setApiLoading(false);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       setApiLoading(true);
+  //       const response = await fetch(URL);
+  //       if (!response.ok) {
+  //         throw new Error("Error fetching data");
+  //       }
+  //       const data = await response.json();
+  //       setApiData(data);
+  //       setApiError(null);
+  //     } catch (error: unknown) {
+  //       setApiError((error as Error).message);
+  //       setApiData(null);
+  //     } finally {
+  //       setApiLoading(false);
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
   // console.log(apiData);
   return (
     <div>

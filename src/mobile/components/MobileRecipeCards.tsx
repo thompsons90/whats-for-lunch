@@ -1,6 +1,8 @@
 import { memo } from "react";
 import { Recipe, RecipeCardsProps } from "../../utils/constants";
 import "../styles/MobileComponentStyles.css";
+import chickenIcon from "../../utils/images/food/ChickenDumplings.webp";
+// import icon from './image/ChickenDumplings.webp'
 
 interface MobileRecipeCardsProps extends RecipeCardsProps {
   filteredRecipes: Recipe[];
@@ -49,6 +51,7 @@ const MobileRecipeCards = memo(
               <div
                 className="mobile-recipe-image-container"
                 style={{
+                  // backgroundImage: `url(${chickenIcon})`,
                   backgroundImage: `url(${recipe.foodImage})`,
                   height: "60px",
                   backgroundSize: "cover",

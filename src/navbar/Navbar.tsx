@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../public/images/whatsForLunchGreen.png";
+import logo from "../utils/images/icons/whatsForLunchGreen.png";
 import { NavProps } from "../utils/constants";
 
 const Navbar: React.FC<NavProps> = ({ navItems }) => {

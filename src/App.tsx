@@ -16,12 +16,12 @@ import CalendarPage from "./pages/Calendar";
 import { CookbookPage } from "./pages/CookbookPage";
 import { LandingPage } from "./pages/LandingPage";
 import { SearchPage } from "./pages/search/SearchPage";
-import homeIcon from "../public/images/home.png";
-import calendarIcon from "../public/images/calendar-pen.png";
-import cookbookIcon from "../public/images/book-alt.png";
-// import searchIcon from "../public/images/search.png";
-import aboutIcon from "../public/images/comment-info.png";
-import contactIcon from "../public/images/user.png";
+import homeIcon from "./utils/images/icons/home.png";
+// import calendarIcon from "./utils/images/icons/calendar-pen.png";
+import cookbookIcon from "./utils/images/icons/book-alt.png";
+// import searchIcon from "./utils/images/icons/search.png";
+import aboutIcon from "./utils/images/icons/comment-info.png";
+// import contactIcon from "./utils/images/icons/user.png";
 import { NavItem } from "./utils/constants";
 import { ViewportProvider } from "./hooks/useViewport";
 

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import githubIcon from "../../public/images/github-logo.png";
-import linkedinIcon from "../../public/images/linkedin-logo.png";
-import userIcon from "../../public/images/user.png";
-import emailIcon from "../../public/images/email.png";
+import githubIcon from "../utils/images/icons/github-logo.png";
+import linkedinIcon from "../utils/images/icons/linkedin-logo.png";
+import userIcon from "../utils/images/icons/github-logo.png";
+import emailIcon from "../utils/images/icons/email.png";
 
 const FooterSection = () => {
   const [footerLinks, setFooterLinks] = useState([

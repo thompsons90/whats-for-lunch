@@ -1,7 +1,6 @@
 
 import { test, expect } from '@playwright/test';
 import axios from 'axios';
-import { apiKey }from '../src/assets/myUrls';
 
 test('RecipeComponent fetches data from API correctly', async ({ page }) => {
   // Launch the browser and open the test page

@@ -1,14 +1,13 @@
+// App.tsx
+import './App.css';
+import RandomRecipe from './components/RandomRecipe';
 
-import './App.css'
-
-function App() {
-
+function App(): JSX.Element {
   return (
-    <div>
-     <h1>What's for Lunch?</h1>
-     <h2>Test</h2>
+    <div className="App">
+      <RandomRecipe />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

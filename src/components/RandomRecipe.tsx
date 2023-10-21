@@ -24,6 +24,8 @@ function RandomRecipe(): JSX.Element {
 
   console.log('RECIPE', recipe);
 
+  //? Test comment to be removed later 
+  
   return (
     <div className="row">
       <button onClick={getRandomRecipe}>Generate Random Recipe</button>
@@ -40,7 +42,7 @@ function RandomRecipe(): JSX.Element {
 
       {recipe && (
         <div className="ingredients">
-          <div>Ingredients needed:</div>
+          <div>Ingredients needed:</div>  
           {recipe.extendedIngredients.map((ingredient, index) => (
             <span key={index}>{index !== recipe.extendedIngredients.length - 1 ? ingredient.name + ', ' : ingredient.name}</span>
           ))}

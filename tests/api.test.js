@@ -1,10 +1,10 @@
-
 import { test, expect } from '@playwright/test';
 import axios from 'axios';
 
 test('RecipeComponent fetches data from API correctly', async ({ page }) => {
-  // Launch the browser and open the test page
-  await page.goto('http://localhost:5173/'); // Replace with your local server URL
+  // Update the base URL to match your local development server URL.
+  const baseURL = 'http://localhost:5173';
+  await page.goto(baseURL);
 
   // Check if the API call is made correctly
   const response = await axios.get('https://api.spoonacular.com/recipes/random?apiKey=a1ef51f91daf4b5baae9c503d96f2982'); // Replace with your actual API key
